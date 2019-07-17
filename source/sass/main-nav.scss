@@ -2,8 +2,20 @@ $dark-blue: #283645;
 $white: #ffffff;
 
 .main-nav__link {
-color: $white;
+  display: block;
+  color: $white;
   text-decoration: none;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__item {
+  padding: 25px 0;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+
 }
 
 

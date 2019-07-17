@@ -3,11 +3,26 @@ $white: #ffffff;
 
 .download-app {
   background-color: $dark-blue;
+  padding-top: 28px;
+  padding-bottom: 35px;
 }
+
+.download-app__list {
+  list-style: none;
+}
+
 .download-app__btn {
-   background-color: $dark-blue;
-   color: $white;
-   border: 2px solid white;
+  padding: 18px 40px;
+  background-color: $dark-blue;
+  color: $white;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-decoration: none;
 }
 
-
+.download-app__link {
+  display: block;
+  color: $white;
+  margin-top: 28px;
+  text-decoration: none;
+}
