@@ -1,0 +1,17 @@
+.photo-day {
+  position: relative;
+}
+
+
+.photo-day__label {
+  background-color: $pink;
+  padding: 10px 25px;
+  padding-bottom: 13px;
+
+  color: $white;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  position: absolute;
+  left: 630px;
+}

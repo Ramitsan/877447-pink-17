@@ -1,5 +1,10 @@
+.features {
+  text-align: center;
+}
+
 .features__slogan {
-  color: $dark-blue;
+  font-size: 24px;
+  font-weight: lighter;
 }
 
 .features__list {
@@ -7,12 +12,12 @@
 }
 
 .features__title {
+  font-weight: bold;
   color: #000000;
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
 }
 
 .features__description {
-  color: $dark-blue;
+
 }

@@ -1,0 +1,28 @@
+.page-header {
+  background-color: $dark-blue;
+}
+
+.page-header__nav {
+  margin: 0;
+  background-color: $dark-blue;
+  text-align: center;
+}
+
+.page-header__logo {
+  margin: 0;
+  border-bottom: 2px solid #000000;
+}
+
+.page-header__img--background {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__img--hand {
+  position: absolute;
+  top: 593px;
+  left: 0px;
+}
+
+
