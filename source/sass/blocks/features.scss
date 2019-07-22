@@ -1,5 +1,13 @@
 .features {
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
+}
+
+.features__wrapper {
+  width: 280px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .features__slogan {
@@ -17,3 +25,46 @@
   font-size: 18px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .features__wrapper {
+    min-width: 620px;
+    width: 100%;
+  }
+
+  .features__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .features__image {
+    order: 2;
+  }
+
+  .features__slogan {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .features__slogan--one {
+    margin-bottom: 0;
+  }
+
+  .features__slogan--two {
+    margin-top: 0;
+    width: 330px;
+    margin: auto;
+  }
+
+  .features__list {
+    width: 320px;
+  }
+
+  .features__image {
+    width: 268px;
+  }
+}
+
+@media (min-width: $desktop-width) {}

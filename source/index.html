@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -20,7 +21,9 @@
           </g>
         </svg>
       </a>
-      <button class="page-header__toggle" type="button">Открыть меню</button>
+      <div class="page-header__toggle">
+        <button class="page-header__btn" type="button">Открыть меню</button>
+      </div>
     </div>
     <nav class="page-header__nav main-nav">
       <ul class="main-nav__list">
@@ -38,54 +41,61 @@
         </li>
       </ul>
     </nav>
-    <h1 class="visually-hidden">Взгляните на жизнь иначе!</h1>
-    <div class="page-header__img">
-      <img class="page-header__img--background" src="img\bg-back-mobile@1x.jpg" width="" height="" alt="">
-      <img class="page-header__img--hand" src="img\iphone-hand-mobile@1x.png" width="" height="" alt="">
-    </div>
-    <section class="download-app">
-      <a class="download-app__btn" href="https://www.apple.com/itunes/">Скачать приложение</a>
-      <ul class="download-app__list">
-        <li class="download-app__item">
-          <a class="download-app__link mac" href=""><img src="img\logo-apple.svg">
-            <span class="visually-hidden">Скачать для IOS</span>
-          </a>
-        </li>
-        <li class="download-app__item">
-          <a class="download-app__link android" href="#"><img src="img\logo-android.svg">
-          <span class="visually-hidden">Скачать для Android</span>
-        </a>
-        </li>
-        <li class="download-app__item">
-          <a class="download-app__link windows" href="#"><img src="img\logo-microsoft.svg">
-          <span class="visually-hidden">Скачать для Windows</span>
-        </a>
-        </li>
-        <p class="download-app__devices">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </ul>
-    </section>
   </header>
   <main class="page-main">
+    <section class="download-app">
+      <div class="download-app__handle">
+        <div class="download-app__wrapper">
+          <h1 class="download-app__slogan">Взгляните на жизнь иначе!</h1>
+          <img class="page-main__img--hand" src="img\iphone-hand-mobile@1x.png" width="258" height="286" alt="Рука с розовым смартфоном">
+        </div>
+      </div>
+      <div class="download-app__download">
+        <div class="download-app__wrapper">
+          <a class="download-app__btn" href="https://www.apple.com/itunes/">Скачать приложение</a>
+          <ul class="download-app__list">
+            <li class="download-app__item">
+              <a class="download-app__link mac" href=""><img src="img\logo-apple.svg">
+                <span class="visually-hidden">Скачать для IOS</span>
+              </a>
+            </li>
+            <li class="download-app__item">
+              <a class="download-app__link android" href="#"><img src="img\logo-android.svg">
+                <span class="visually-hidden">Скачать для Android</span>
+              </a>
+            </li>
+            <li class="download-app__item">
+              <a class="download-app__link windows" href="#"><img src="img\logo-microsoft.svg">
+                <span class="visually-hidden">Скачать для Windows</span>
+              </a>
+            </li>
+          </ul>
+          <p class="download-app__devices">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+    </section>
     <section class="features">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="features__wrapper">
-        <p class="features__slogan">Устали от серости мегаполиса?</p>
-        <p class="features__slogan">Нам есть, что вам предложить!</p>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__title">Поднимает настроение</h2>
-              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Меняет мир вокруг</h2>
-              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Заводит новых друзей</h2>
-              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              <img class="features__image" src="img/iphone-screen-3-desktop@1x.png" width="" height="" alt="Смартфон с надписью Всем привет">
-          </li>
-        </ul>
+        <p class="features__slogan features__slogan--one">Устали от серости мегаполиса?</p>
+        <p class="features__slogan features__slogan--two">Нам есть, что вам предложить!</p>
+        <div class="features__container">
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__title">Поднимает настроение</h2>
+                <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Меняет мир вокруг</h2>
+                <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title">Заводит новых друзей</h2>
+                <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <img class="features__image" src="img/iphone-screen-3-desktop@1x.png" width="268" height="" alt="Смартфон с надписью Всем привет">
+        </div>
       </div>
     </section>
   </main>

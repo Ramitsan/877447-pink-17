@@ -1,4 +1,10 @@
 .logo {
   display: block;
   padding: 21px 20px;
+  widows: 85px;
+
 }
+
+@media (min-width: $tablet-width) {}
+
+@media (min-width: $desktop-width) {}
