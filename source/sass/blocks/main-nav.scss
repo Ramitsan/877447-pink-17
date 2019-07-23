@@ -27,7 +27,8 @@
 
 .main-nav__item {
   display: inline-block;
-  padding: 25px 0;
+  min-height: 65px;
+  padding: 20px 0;
   border-top: 1px solid #485461;
   border-bottom: 2px solid #000000;
   text-align: center;
@@ -41,8 +42,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 1000px;
-    margin: 0;
+     background-color: transparentize($dark-blue, 0.3);
   }
 
   .main-nav__list {

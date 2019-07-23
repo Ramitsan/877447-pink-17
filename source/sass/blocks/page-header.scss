@@ -1,4 +1,5 @@
 .page-header {
+  min-height: 1070px;
   background-color: $dark-blue;
   display: flex;
   flex-direction: column;
@@ -14,10 +15,6 @@
   height: 70px;
   margin: 0;
   border-bottom: 2px solid #000000;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .page-header__toggle {
@@ -25,6 +22,10 @@
 }
 
 @media (min-width: $tablet-width) {
+.page-header {
+  min-height: 1030px;
+}
+
   .page-header__logo {
     height: 110px;
   }
@@ -32,10 +33,9 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
   }
   .page-header__toggle {
     display: none;
@@ -43,5 +43,12 @@
 
   .page-header__logo {
   border-bottom: none;
+
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
