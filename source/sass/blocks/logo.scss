@@ -1,8 +1,14 @@
 .logo {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   padding: 21px 20px;
   widows: 85px;
 
+}
+
+.logo__link {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {}

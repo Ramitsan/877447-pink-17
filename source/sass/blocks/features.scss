@@ -12,11 +12,12 @@
 
 .features__slogan {
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .features__list {
   list-style: none;
+  padding: 0;
 }
 
 .features__title {
@@ -33,13 +34,14 @@
   }
 
   .features__container {
-    width: 100%;
+    width: 620px;
+    margin: 0 20px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
-  .features__image {
+  .features__image--three {
     order: 2;
   }
 
@@ -64,6 +66,14 @@
 
   .features__image {
     width: 268px;
+  }
+
+  .features__description {
+    text-align: left;
+  }
+
+  .features-item {
+    width: 310px;
   }
 }
 

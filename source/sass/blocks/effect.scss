@@ -1,0 +1,22 @@
+.effect {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .effect {
+  display: block;
+}
+
+  .effect__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    margin: 60px 20px;
+  }
+
+  .effect__info {
+    width: 310px;
+  }
+}
