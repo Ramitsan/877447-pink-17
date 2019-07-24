@@ -1,17 +1,51 @@
 .photo-users {
+  min-width: 320px;
   background-color: $white;
   text-align: center;
+}
+
+.photo-users__wrapper {
+  width: 280px;
+  margin: 0 20px;
 }
 
 .photo-users__slogan {
   line-height: 30px;
 }
 
-@media (min-width: $tablet-width) {
+.photo-users__catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
+.photo-users__item {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-users__wrapper {
+    width: 620px;
+  }
+
+  .photo-users__catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .photo-users__item {
+    width: 300px;
+  }
 
 }
 
 @media (min-width: $desktop-width) {
+  .photo-users__wrapper {
+    width: 960px;
+    margin: 0 10px;
+  }
+
 
 }

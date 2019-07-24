@@ -43,7 +43,9 @@
   <main class="page-main">
     <section class="photo-users">
       <h2 class="photo-users__title">Фотографии пользователей</h2>
-      <p class="photo-users__slogan">Взгляните на фотографии, которые выкладывают наши пользователи! Видите, как не хватает ваших?</p>
+      <div class="photo-users__wrapper">
+        <p class="photo-users__slogan">Взгляните на фотографии, которые выкладывают наши пользователи! Видите, как не хватает ваших?</p>
+      </div>
       <div class="photo-users__item photo-day">
         <img class="photo-users__photo photo-day_photo" src="img/panorama-mobile@1x.jpg" width="320" height="138" alt="Панорама дня">
         <span class="photo-day__label">Панорама дня</span>
@@ -58,84 +60,88 @@
           </blockquote>
         </div>
       </div>
-      <div class="photo-users__item">
-        <div class="photo-users__wrapper">
-          <img class="photo-users__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="">
-          <blockquote class="user-comment">
-            <cite class="user-comment__author">Левон</cite>
-            <time class="user-comment__time">(5 часов назад)</time>
-            <p class="user-comment__text">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-            </p>
-            <p class="user-comment__likes">Нравится:356</p>
-          </blockquote>
+      <div class="photo-users__wrapper">
+      <div class="photo-users__catalog">
+        <div class="photo-users__item">
+          <div class="photo-users__wrapper">
+            <img class="photo-users__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="">
+            <blockquote class="user-comment">
+              <cite class="user-comment__author">Левон</cite>
+              <time class="user-comment__time">(5 часов назад)</time>
+              <p class="user-comment__text">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <p class="user-comment__likes">Нравится:356</p>
+            </blockquote>
+          </div>
+        </div>
+        <div class="photo-users__item">
+          <div class="photo-users__wrapper">
+            <img class="photo-users__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="">
+            <blockquote class="user-comment">
+              <cite class="user-comment__author">Антон</cite>
+              <time class="user-comment__time">(12 часов назад)</time>
+              <p class="user-comment__text">
+                Соседи будут рады!
+              </p>
+              <p class="user-comment__likes">Нравится:666</p>
+            </blockquote>
+          </div>
+        </div>
+        <div class="photo-users__item">
+          <div class="photo-users__wrapper">
+            <img class="photo-users__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="">
+            <blockquote class="user-comment">
+              <cite class="user-comment__author">Борис</cite>
+              <time class="user-comment__time">(20 часов назад)</time>
+              <p class="user-comment__text">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <p class="user-comment__likes">Нравится:215</p>
+            </blockquote>
+          </div>
+        </div>
+        <div class="photo-users__item">
+          <div class="photo-users__wrapper">
+            <img class="photo-users__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="">
+            <blockquote class="user-comment">
+              <cite class="user-comment__author">Сергей</cite>
+              <time class="user-comment__time">(25 часов назад)</time>
+              <p class="user-comment__text">
+                Самая кубанская в мире!
+              </p>
+              <p class="user-comment__likes">Нравится:4</p>
+            </blockquote>
+          </div>
+        </div>
+        <div class="photo-users__item">
+          <div class="photo-users__wrapper">
+            <img class="photo-users__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="">
+            <blockquote class="user-comment">
+              <cite class="user-comment__author">Максим</cite>
+              <time class="user-comment__time">(40 часов назад)</time>
+              <p class="user-comment__text">
+                Где снег-то?
+              </p>
+              <p class="user-comment__likes">Нравится:150</p>
+            </blockquote>
+          </div>
+        </div>
+        <div class="photo-users__item">
+          <div class="photo-users__wrapper">
+            <img class="photo-users__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="">
+            <blockquote class="user-comment">
+              <cite class="user-comment__author">Надежда</cite>
+              <time class="user-comment__time">(45 часов назад)</time>
+              <p class="user-comment__text">
+                Всем GM и взаимные лайки!
+              </p>
+              <p class="user-comment__likes">Нравится:2560</p>
+            </blockquote>
+          </div>
         </div>
       </div>
-      <div class="photo-users__item">
-        <div class="photo-users__wrapper">
-          <img class="photo-users__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="">
-          <blockquote class="user-comment">
-            <cite class="user-comment__author">Антон</cite>
-            <time class="user-comment__time">(12 часов назад)</time>
-            <p class="user-comment__text">
-              Соседи будут рады!
-            </p>
-            <p class="user-comment__likes">Нравится:666</p>
-          </blockquote>
-        </div>
-      </div>
-      <div class="photo-users__item">
-        <div class="photo-users__wrapper">
-          <img class="photo-users__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="">
-          <blockquote class="user-comment">
-            <cite class="user-comment__author">Борис</cite>
-            <time class="user-comment__time">(20 часов назад)</time>
-            <p class="user-comment__text">
-              Здесь могла быть ваша цитата о высоком и вечном.
-            </p>
-            <p class="user-comment__likes">Нравится:215</p>
-          </blockquote>
-        </div>
-      </div>
-      <div class="photo-users__item">
-        <div class="photo-users__wrapper">
-          <img class="photo-users__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="">
-          <blockquote class="user-comment">
-            <cite class="user-comment__author">Сергей</cite>
-            <time class="user-comment__time">(25 часов назад)</time>
-            <p class="user-comment__text">
-              Самая кубанская в мире!
-            </p>
-            <p class="user-comment__likes">Нравится:4</p>
-          </blockquote>
-        </div>
-      </div>
-      <div class="photo-users__item">
-        <div class="photo-users__wrapper">
-          <img class="photo-users__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="">
-          <blockquote class="user-comment">
-            <cite class="user-comment__author">Максим</cite>
-            <time class="user-comment__time">(40 часов назад)</time>
-            <p class="user-comment__text">
-              Где снег-то?
-            </p>
-            <p class="user-comment__likes">Нравится:150</p>
-          </blockquote>
-        </div>
-      </div>
-      <div class="photo-users__item">
-        <div class="photo-users__wrapper">
-          <img class="photo-users__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="">
-          <blockquote class="user-comment">
-            <cite class="user-comment__author">Надежда</cite>
-            <time class="user-comment__time">(45 часов назад)</time>
-            <p class="user-comment__text">
-              Всем GM и взаимные лайки!
-            </p>
-            <p class="user-comment__likes">Нравится:2560</p>
-          </blockquote>
-        </div>
-      </div>
+    </div>
     </section>
   </main>
   <footer class="page-footer">

@@ -15,7 +15,7 @@
 
   .page-footer__wrapper {
     width: 620px;
-    margin: 0 20px;
+    margin: 30px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,4 +23,10 @@
 
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+.page-footer__wrapper {
+  width: 960px;
+  padding: 60px 10px;
+}
+
+}
