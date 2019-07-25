@@ -1,21 +1,18 @@
- .copyright {
-   width: 140px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+.copyright {
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
 
-   margin: 0 auto;
- }
+.copyright__label {
+  line-height: 18px;
+}
 
- .copyright__label {
-   line-height: 18px;
- }
-
- @media (min-width: $tablet-width) {
-   .copyright {
-     width: 135px;
-     margin-right: 0;
-   }
- }
-
- @media (min-width: $desktop-width) {}
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 135px;
+    margin-right: 0;
+  }
+}
