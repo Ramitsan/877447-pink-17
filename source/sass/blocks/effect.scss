@@ -2,11 +2,10 @@
   display: none;
 }
 
-
 @media (min-width: $tablet-width) {
   .effect {
-  display: block;
-}
+    display: block;
+  }
 
   .effect__wrapper {
     display: flex;

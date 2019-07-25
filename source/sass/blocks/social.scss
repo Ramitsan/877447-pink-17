@@ -1,5 +1,14 @@
+.social {
+  width: 185px;
+  margin: 0 auto;
+}
+
 .social__list {
   list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .social__link {
@@ -8,16 +17,10 @@
 
 @media (min-width: $tablet-width) {
   .social__list {
-    width: 185px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-
-
 }
 
-@media (min-width: $desktop-width) {
-
-}
-
+@media (min-width: $desktop-width) {}

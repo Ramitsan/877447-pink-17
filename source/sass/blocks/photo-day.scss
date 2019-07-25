@@ -14,16 +14,8 @@
   color: $white;
   font-size: 12px;
   text-transform: uppercase;
-
-  position: absolute;
-  left: 630px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {}
 
-
-}
-
-@media (min-width: $desktop-width) {
-
-}
+@media (min-width: $desktop-width) {}

@@ -41,10 +41,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
-     background-color: transparentize($dark-blue, 0.3);
-  }
-
   .main-nav__list {
     width: 100%;
     display: flex;
@@ -59,5 +55,15 @@
     text-align: center;
     border-top: none;
     border-bottom: none;
+  }
+
+  .main-nav__link {
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  .main-nav__link-active {
+    border-bottom: 2px solid $white;
   }
 }
