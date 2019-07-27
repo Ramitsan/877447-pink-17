@@ -1,5 +1,5 @@
 @import "abstract/variables.scss";
-@import "base/normalize.scss";
+@import "node_modules/normalize.scss/normalize.scss";
 @import "base/base.scss";
 @import "base/fonts.scss";
 @import "blocks/page-header.scss";
@@ -12,4 +12,5 @@
 @import "blocks/photo-day.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
-@import "blocks/copyright.scss"
+@import "blocks/copyright.scss";
+@import "blocks/effect.scss";

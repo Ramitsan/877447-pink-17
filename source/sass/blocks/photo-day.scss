@@ -2,6 +2,9 @@
   position: relative;
 }
 
+.photo-day_photo {
+  width: 100%;
+}
 
 .photo-day__label {
   background-color: $pink;
@@ -11,7 +14,4 @@
   color: $white;
   font-size: 12px;
   text-transform: uppercase;
-
-  position: absolute;
-  left: 630px;
 }

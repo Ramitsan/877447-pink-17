@@ -1,0 +1,78 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: block;
+  }
+
+  .effect__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .effect__info {
+    width: 310px;
+    padding-top: 100px;
+    padding-bottom: 125px;
+    margin-left: 310px;
+    position: relative;
+  }
+
+  .effect__info::before {
+    content: url("../../img/effect24.png");
+    position: absolute;
+    top: 90px;
+    left: -320px;
+    text-align: center;
+    margin: 0 auto;
+
+    width: 238px;
+    height: 276px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect__wrapper {
+    width: 960px;
+    padding: 10px;
+  }
+
+  .effect__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .effect__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+    color: $pink;
+    text-decoration: underline;
+  }
+
+  .effect__info {
+    width: 525px;
+    margin-left: 380px;
+  }
+
+  .effect__info::before {
+    content: url("../../img/effect24-desktop.png");
+    position: absolute;
+    top: 40px;
+    left: -390px;
+    text-align: center;
+    margin: 0 auto;
+
+    width: 238px;
+    height: 276px;
+  }
+}
