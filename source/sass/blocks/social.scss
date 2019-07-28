@@ -1,7 +1,24 @@
+.social {
+  width: 185px;
+  margin: 0 auto;
+}
+
 .social__list {
   list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .social__link {
   display: inline-block;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
