@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <!-- Header -->
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo logo">
@@ -44,9 +45,11 @@
       </nav>
     </div>
     <div class="page-header__photo-caption">
-      <h2 class="page-header__photo-title">Фотографии пользователей</h2>
+      <h1 class="page-header__photo-title">Фотографии пользователей</h1>
     </div>
   </header>
+  <!-- Header [END] -->
+  <!-- Main -->
   <main class="page-main">
     <section class="photo-users">
       <div class="photo-users__wrapper">
@@ -139,7 +142,34 @@
         </div>
       </div>
     </section>
+    <section class="add-photo">
+      <div class="add-photo__text">
+        <p class="add-photo__slogan">Затмите их всех!</p>
+        <p class="add-photo__slogan">Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+      <div class="add-photo__user your-photo">
+        <div class="add-photo__wrapper">
+          <div class="your-photo__preview">
+            <img class="your-photo__image" src="img/photo-road-mobile@1x.jpg" width="300" height="400" alt="Фото зимней дороги">
+          </div>
+          <div class="your-photo__tools tools">
+            <form class="your-photo__form" action="https://echo.htmlacademy.ru" method="POST">
+              <button class="tools__btn tools__btn--active tools__btn--crop"></button>
+              <input class="tools__range" type="range"><br>
+              <button class="tools__btn tools__btn--fill"></button>
+              <input class="tools__range" type="range"><br>
+              <button class="tools__btn tools__btn--contrast"></button>
+              <input class="tools__range" type="range"><br>
+              <button class="tools__btn tools__btn--active tools__post-it" type="submit">Запостить</button>
+              <button class="tools__btn tools__cancel" type="reset">Отмена</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <!-- Main [END] -->
+  <!-- Footer -->
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
@@ -197,6 +227,7 @@
       </div>
     </div>
   </footer>
+  <!-- Footer [END] -->
 </body>
 
 </html>
