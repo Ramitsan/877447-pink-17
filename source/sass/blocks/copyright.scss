@@ -10,6 +10,24 @@
   line-height: 18px;
 }
 
+.copyright__icon {
+  path {
+    fill: $pink;
+  }
+
+  &:hover {
+    path {
+      fill: $dark-blue;
+    }
+  }
+
+  &:active {
+    path {
+      fill: transparentize($dark-blue, 0.3);
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     width: 135px;

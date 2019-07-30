@@ -46,6 +46,13 @@
   color: $white;
   border: 2px solid white;
   border-radius: 30px;
+   &:hover {
+    color: $pink;
+    background-color: $white;
+   }
+   &:active {
+    color: transparentize($pink, 0.3);
+   }
 }
 
 .download-app__link {

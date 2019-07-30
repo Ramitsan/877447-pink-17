@@ -5,6 +5,7 @@
 @media (min-width: $tablet-width) {
   .effect {
     display: block;
+    background-color: $white;
   }
 
   .effect__wrapper {
@@ -37,6 +38,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .effect {
+   background-color: $light-gray;
+  }
+
   .effect__wrapper {
     width: 960px;
     padding: 10px;
