@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <!-- Header -->
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo logo">
@@ -44,13 +45,103 @@
       </nav>
     </div>
     <div class="page-header__form-caption">
-      <h2 class="page-header__form-title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      <h1 class="page-header__form-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
   </header>
+  <!-- Header [END] -->
+  <!-- Main -->
   <main class="page-main">
     <section class="contest">
+      <div class="contest__slogan">
+        <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      </div>
+      <form class="contest__form form" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="form__item form-name">
+          <div class="form__wrapper form-name__wrapper">
+            <label class="form-name__label form-name__label--surname" for="surname">Фамилия:
+              <input class="form-name__input form-name__input--surname" id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
+            </label>
+            <label class="form-name__label form-name__label--name" for="name">Имя:
+              <input class="form-name__input form-name__input--name" id="name" type="text" name="name" placeholder="Введите ваше имя *">
+            </label>
+            <label class="form-name__label form-name__label--patronymic" for="patronymic">Отчество:
+              <input class="form-name__input form-name__input--patronymic" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__item form-progress">
+          <div class="form__wrapper form-progress__wrapper">
+            <legend class="form__title form__title--progress">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form-progress__list">
+              <li class="form-progress__item" tabindex="0">
+                <input class="form-progress__option" type="checkbox" id="option_1" name="option_1" checked>
+                <label for="option_1">Сделал селфи с акулой</label>
+              </li>
+              <li class="form-progress__item" tabindex="0">
+                <input class="form-progress__option" type="checkbox" id="option_2" name="option_2" checked>
+                <label for="option_2">Обгорел на пляже</label>
+              </li>
+              <li class="form-progress__item" tabindex="0">
+                <input class="form-progress__option" type="checkbox" id="option_3" name="option_3">
+                <label for="option_3">Видел Чака Норриса</label>
+              </li>
+              <li class="form-progress__item" tabindex="0">
+                <input class="form-progress__option" type="checkbox" id="option_4" name="option_4">
+                <label for="option_4">Накупил сувениров</label>
+              </li>
+              <li class="form-progress__item" tabindex="0">
+                <input class="form-progress__option" type="checkbox" id="option_5" name="option_5" checked>
+                <label for="option_5">Удержал башню</label>
+              </li>
+              <li class="form-progress__item" tabindex="0">
+                <input class="form-progress__option" type="checkbox" id="option_6" name="option_6">
+                <label for="option_6">Разгромил отель</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="form__item form-contacts">
+          <div class="form__wrapper form-contacts__wrapper">
+            <label class="form-contacts__label form-contacts__label--phone" for="phone">Номер телефона
+              <input class="form-contacts__input form-contacts__input--phone" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+            </label>
+            <label class="form-contacts__label form-contacts__label--email" for="name">Адрес почты
+              <input class="form-contacts__input form-contacts__input--email" id="email" type="email" name="email" placeholder="Введите почту *">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__item form-applications">
+          <div class="form__wrapper form-applications__wrapper">
+            <legend class="form__title form__title--applications">С каким приложением путешествовали?</legend>
+            <ul class="form-applications__list">
+              <li class="form-applications__item" tabindex="0">
+                <input class="form-applications__option" type="radio" id="iOS" name="iOS" value="1" checked>
+                <label class="form-applications__label" for="iOS">Pink для iOS</label>
+              </li>
+              <li class="form-applications__item" tabindex="0">
+                <input class="form-applications__option" type="radio" id="Android" name="Android" value="2">
+                <label class="form-applications__label" for="Android">Pink на Android</label>
+              </li>
+              <li class="form-applications__item" tabindex="0">
+                <input class="form-applications__option" type="radio" id="Windows" name="Windows" value="3">
+                <label class="form-applications__label" for="Windows">Windows Phone</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="form__item form-emotions">
+          <div class="form__wrapper form-emotions__wrapper">
+            <label class="form-emotions__label" for="comment-field">Опишите свои эмоции</label>
+            <textarea class="form-emotions__comment" name="comment" id="comment-field" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </div>
+        </fieldset>
+        <button class="form__btn-submit" type="submit">Отправить форму</button>
+        <p class="form__note"><sup>*</sup>— обязательные поля</p>
+      </form>
     </section>
   </main>
+  <!-- Main [END] -->
+  <!-- Footer -->
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
@@ -108,6 +199,37 @@
       </div>
     </div>
   </footer>
+  <!-- Footer [END] -->
+  <!-- Modal-request -->
+  <section class="modal modal-request">
+    <h2 class="modal-request__title">Ваша заявка отправлена</h2>
+    <div class="modal-request__top">
+      <div class="modal-request__wrapper">
+        <p class="modal-request__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      </div>
+    </div>
+    <div class="modal-request__bottom">
+      <div class="modal-request__wrapper">
+        <button class="modal-request__btn" type="button">Закрыть окно</button>
+      </div>
+    </div>
+  </section>
+  <!-- Modal-request [END] -->
+  <!-- Modal-bad -->
+  <section class="modal modal-bad">
+    <h2 class="modal-bad__title">Что-то пошло не так!</h2>
+    <div class="modal-bad__top">
+      <div class="modal-bad__wrapper">
+        <p class="modal-bad__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+    </div>
+    <div class="modal-bad__bottom">
+      <div class="modal-bad__wrapper">
+        <button class="modal-bad__btn" type="button">OK</button>
+      </div>
+    </div>
+  </section>
+  <!-- Modal-bad [END] -->
 </body>
 
 </html>
