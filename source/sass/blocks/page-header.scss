@@ -1,10 +1,10 @@
 .page-header {
   width: 100%;
-  background-color: $dark-blue;
+  background-color: #1d2631;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: left 1px bottom 270px;
+  background-position: left 0% bottom 270px;
 }
 
 .page-header__wrapper {
@@ -21,7 +21,7 @@
 .page-header__logo {
   height: 70px;
   margin: 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .page-header__toggle {

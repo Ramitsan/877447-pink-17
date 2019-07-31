@@ -1,7 +1,7 @@
 .features {
   width: 100%;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 18px;
 }
 
 .features__wrapper {
@@ -11,7 +11,30 @@
 
 .features__slogan {
   font-size: 24px;
+  line-height: 30px;
   font-weight: 300;
+}
+
+.features__container {
+  width: 280px;
+  padding-top: 58px;
+  padding-bottom: 45px;
+}
+
+.features__item {
+  margin-bottom: 25px;
+}
+
+.features__item--three {
+  margin-bottom: 45px;
+}
+
+.features__description {
+  width: 255px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $dark-blue;
 }
 
 .features__list {
@@ -33,6 +56,7 @@
 }
 
 .features__title {
+  margin-bottom: 15px;
   font-weight: bold;
   color: #000000;
   font-size: 18px;
@@ -40,6 +64,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features {
+    padding-top: 47px;
+  }
+
   .features__wrapper {
     min-width: 620px;
     width: 100%;
@@ -47,8 +75,8 @@
 
   .features__container {
     width: 620px;
-    padding-top: 75px;
-    padding-bottom: 45px;
+    margin: 0 20px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -56,6 +84,10 @@
   }
 
   .features__list {
+
+    margin-left: 310px;
+    width: 310px;
+    margin: 0;
     padding: 0;
     position: relative;
   }
@@ -67,11 +99,16 @@
   .features__list::before {
     content: url("../../img/iphone-screen-3-tablet@1x.png");
     position: absolute;
-    top: -30px;
-    left: -320px;
+    top: -50px;
+    left: -310px;
 
     width: 268px;
     height: 481px;
+  }
+
+  .features__item {
+    text-align: left;
+    margin-bottom: 30px;
   }
 
   .features__slogan {
@@ -94,6 +131,7 @@
   }
 
   .features__description {
+    width: 308px;
     font-size: 14px;
     line-height: 24px;
     color: $dark-blue;

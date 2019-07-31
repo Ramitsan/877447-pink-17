@@ -18,7 +18,7 @@
 
   .effect__info {
     width: 310px;
-    padding-top: 100px;
+    padding-top: 89px;
     padding-bottom: 125px;
     margin-left: 310px;
     position: relative;
@@ -27,19 +27,44 @@
   .effect__info::before {
     content: url("../../img/effect24.png");
     position: absolute;
-    top: 90px;
-    left: -320px;
+    top: 73px;
+    left: -310px;
     text-align: center;
     margin: 0 auto;
 
     width: 238px;
     height: 276px;
   }
+
+  .effect__slogan {
+    width: 170px;
+  }
+
+  .effect__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  .effect__text {
+    width: 295px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .effect__link {
+    color: $pink;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .effect {
-   background-color: $light-gray;
+    background-color: $light-gray;
   }
 
   .effect__wrapper {
