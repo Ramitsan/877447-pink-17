@@ -2,16 +2,30 @@
   position: relative;
 }
 
+.photo-day::before {
+  content: "панорама дня";
+  position: absolute;
+
+  background-color: $pink;
+  padding: 7px 23px;
+  padding-bottom: 13px;
+  color: $white;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  right: 20px;
+  width: 140px;
+  height: 36px;
+}
+
 .photo-day_photo {
   width: 100%;
 }
 
-.photo-day__label {
-  background-color: $pink;
-  padding: 10px 25px;
-  padding-bottom: 13px;
+@media (min-width: $tablet-width) {
+  .photo-day::before {
+    top: 57px;
+  }
 
-  color: $white;
-  font-size: 12px;
-  text-transform: uppercase;
 }

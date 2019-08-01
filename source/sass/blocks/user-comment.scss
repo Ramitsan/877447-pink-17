@@ -1,8 +1,41 @@
+.user-comment {
+  margin: 0;
+  padding-top: 11px;
+  padding-left: 18px;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  background-color: $light-gray;
+}
+
 .user-comment__likes {
+  position: relative;
+  margin-left: 31px;
+  margin-top: 9px;
   color: $pink;
   font-size: 12px;
+  line-height: 24px;
   text-transform: uppercase;
 }
+
+ .user-comment__likes::before {
+    content: url("../../img/icon-heart.svg");
+    position: absolute;
+    left: -31px;
+    bottom: 10px;
+    width: 13px;
+    height: 12px;
+
+
+
+    // top: 35px;
+    // left: -364px;
+    // text-align: center;
+    // margin: 0 auto;
+
+    // width: 238px;
+    // height: 276px;
+  }
+
 
 .user-comment__author {
   font-weight: bold;
@@ -13,4 +46,9 @@
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.user-comment__text {
+  margin-top: 0;
+  margin-bottom: 9px;
 }

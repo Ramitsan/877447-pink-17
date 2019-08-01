@@ -4,8 +4,10 @@
 }
 
 .photo-users__wrapper {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
+  padding: 0;
+  text-align: left;
 }
 
 .photo-users__catalog {
@@ -20,14 +22,15 @@
 }
 
 .photo-users__rubric {
-  width: 245px;
+  width: 240px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 55px;
+  padding-top: 45px;
+  padding-bottom: 49px;
 }
 
 .photo-users__slogan {
+  margin: 0;
   font-size: 14px;
   line-height: 30px;
   color: $dark-blue;
@@ -53,8 +56,8 @@
 
   .photo-users__rubric {
     width: 450px;
-    padding-top: 90px;
-    padding-bottom: 80px;
+    padding-top: 92px;
+    padding-bottom: 76px;
   }
 
   .photo-users__slogan {

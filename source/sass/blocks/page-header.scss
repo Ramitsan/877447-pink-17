@@ -7,6 +7,10 @@
   background-position: left 0% bottom 270px;
 }
 
+.page-header__inner {
+  background-position: left 0% bottom -665%;
+}
+
 .page-header__wrapper {
   padding: 0;
   margin: 0;
@@ -32,8 +36,8 @@
   width: 175px;
   text-align: center;
   margin: 0 auto;
-  padding-top: 33px;
-  padding-bottom: 87px;
+  padding-top: 13px;
+  padding-bottom: 65px;
 }
 
 .page-header__photo-title {
@@ -65,6 +69,10 @@
     background-size: auto;
   }
 
+  .page-header__inner {
+    background-position: 50% -750%;
+}
+
   .page-header__logo {
     height: 110px;
   }
@@ -73,11 +81,13 @@
     width: 360px;
     text-align: center;
     margin: 0 auto;
-    padding-top: 78px;
-    padding-bottom: 147px;
+    padding-top: 69px;
+    padding-bottom: 140px;
   }
 
   .page-header__photo-title {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 50px;
     line-height: 60px;
   }
