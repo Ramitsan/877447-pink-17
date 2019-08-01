@@ -54,11 +54,15 @@
     margin-bottom: 10px;
   }
 
+  .effect__text br {
+    display: none;
+  }
+
   .effect__link {
     color: $pink;
     font-size: 14px;
     line-height: 24px;
-    text-decoration: underline;
+    border-bottom: 1px solid $pink;
   }
 }
 
@@ -69,40 +73,56 @@
 
   .effect__wrapper {
     width: 960px;
-    padding: 10px;
+    padding: 0 10px;
   }
 
   .effect__title {
-    font-size: 30px;
     line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .effect__title br {
+    display: none;
   }
 
   .effect__text {
+    width: 524px;
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 28px;
+  }
+
+  .effect__text br {
+    display: block;
   }
 
   .effect__link {
     font-size: 18px;
     line-height: 30px;
-    color: $pink;
-    text-decoration: underline;
   }
 
   .effect__info {
-    width: 525px;
-    margin-left: 380px;
+    width: 570px;
+    margin-left: 365px;
+    padding-top: 109px;
+    padding-bottom: 115px;
   }
 
   .effect__info::before {
     content: url("../../img/effect24-desktop.png");
     position: absolute;
-    top: 40px;
-    left: -390px;
+    top: 35px;
+    left: -364px;
     text-align: center;
     margin: 0 auto;
 
     width: 238px;
     height: 276px;
   }
+
+  .effect__slogan {
+    width: 300px;
+  }
+
+
 }

@@ -45,3 +45,19 @@
     color: $dark-blue;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    width: 150px;
+    margin-left: 0;
+  }
+
+  .copyright__label {
+    font-size: 18px;
+  }
+
+  .copyright__link {
+    margin-top: 12px;
+  }
+
+}
