@@ -47,25 +47,24 @@
     min-height: 155px;
     padding-top: 24px;
     padding-left: 28px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
     display: flex;
     flex-direction: column;
   }
 
   .user-comment__text {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     flex-grow: 1;
   }
 
   .user-comment__likes {
     margin-bottom: 22px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .user-comment__likes::before {
     left: 227px;
     bottom: 11px;
-
   }
 }
