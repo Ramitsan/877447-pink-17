@@ -19,6 +19,9 @@
 .photo-users__item {
   width: 280px;
   margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .photo-users__rubric {
@@ -37,6 +40,11 @@
   font-weight: normal;
 }
 
+.photo-users__photo {
+  width: 280px;
+  height: 180px;
+}
+
 @media (min-width: $tablet-width) {
   .photo-users__wrapper {
     width: 620px;
@@ -52,6 +60,7 @@
 
   .photo-users__item {
     width: 300px;
+    margin: 0;
   }
 
   .photo-users__rubric {
@@ -63,11 +72,15 @@
   .photo-users__slogan {
     font-size: 18px;
   }
+  .photo-users__photo {
+  width: 300px;
+  height: 300px;
+}
 }
 
 @media (min-width: $desktop-width) {
   .photo-users__wrapper {
-    width: 960px;
+    width: 940px;
   }
 
   .photo-users__rubric {

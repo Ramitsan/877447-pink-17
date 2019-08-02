@@ -1,5 +1,7 @@
 .photo-day {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .photo-day::before {
@@ -23,8 +25,115 @@
   width: 100%;
 }
 
+.photo-day__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+}
+
+.photo-day__author {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.photo-day__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photo-day__comment {
+  margin: 0;
+  padding: 18px;
+  padding-bottom: 19px;
+  margin-bottom: 20px;
+  background-color: $light-gray;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.photo-day__text {
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 9px;
+}
+
+.photo-day__likes {
+  position: relative;
+  color: $pink;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 31px;
+}
+
+.photo-day__likes::before {
+  content: url("../../img/icon-heart.svg");
+  position: absolute;
+  left: -31px;
+  bottom: 10px;
+  width: 13px;
+  height: 12px;
+}
+
+
 @media (min-width: $tablet-width) {
   .photo-day::before {
     top: 57px;
+  }
+
+  .photo-day_photo {
+    width: 100%;
+    height: 510px;
+  }
+
+  .photo-day__wrapper {
+    width: 620px;
+  }
+
+  .photo-day__comment {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-top: 23px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+  }
+
+  .photo-day__info {
+    order: 1;
+    width: 50%;
+    text-align: left;
+  }
+
+  .photo-day__likes {
+    order: 2;
+    width: 50%;
+    margin: 0;
+    text-align: right;
+    padding-right: 33px;
+  }
+
+  .photo-day__likes::before {
+    left: 268px;
+  }
+
+  .photo-day__text {
+    order: 3;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-day__wrapper {
+    width: 940px;
   }
 }

@@ -37,6 +37,10 @@
   color: $dark-blue;
 }
 
+.features__description--two br {
+    display: none;
+  }
+
 .features__list {
   list-style: none;
   padding: 0;
@@ -107,6 +111,14 @@
     margin-bottom: 30px;
   }
 
+  .features__item--two {
+    margin-bottom: 35px;
+  }
+
+  .features__title--three {
+    margin-bottom: 11px;
+  }
+
   .features__slogan {
     font-size: 40px;
     line-height: 48px;
@@ -132,6 +144,14 @@
     line-height: 24px;
     color: $dark-blue;
     text-align: left;
+  }
+
+  .features__description--three {
+    margin-top: 11px;
+  }
+
+  .features__description--two br {
+    display: block;
   }
 }
 
@@ -240,5 +260,9 @@
 
   .features__description--three {
     width: 235px;
+  }
+
+  .features__description--two br {
+    display: none;
   }
 }

@@ -54,7 +54,7 @@
     margin-bottom: 10px;
   }
 
-  .effect__text br {
+  .effect__space-one {
     display: none;
   }
 
@@ -92,8 +92,12 @@
     margin-bottom: 28px;
   }
 
-  .effect__text br {
+  .effect__space-one {
     display: block;
+  }
+
+  .effect__space-two {
+    display: none;
   }
 
   .effect__link {
