@@ -71,7 +71,7 @@
 
   .page-header__inner {
     background-position: 50% -750%;
-}
+  }
 
   .page-header__logo {
     height: 110px;
@@ -114,10 +114,16 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .page-header__wrapper {
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: transparent;
   }
 
@@ -131,16 +137,6 @@
 
   .page-header__logo {
     border-bottom: none;
-  }
-
-  .page-header__wrapper {
-    width: 960px;
-    padding: 0 10px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
   }
 
   .page-header__photo-caption {
