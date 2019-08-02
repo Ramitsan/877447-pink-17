@@ -17,25 +17,14 @@
   text-transform: uppercase;
 }
 
- .user-comment__likes::before {
-    content: url("../../img/icon-heart.svg");
-    position: absolute;
-    left: -31px;
-    bottom: 10px;
-    width: 13px;
-    height: 12px;
-
-
-
-    // top: 35px;
-    // left: -364px;
-    // text-align: center;
-    // margin: 0 auto;
-
-    // width: 238px;
-    // height: 276px;
-  }
-
+.user-comment__likes::before {
+  content: url("../../img/icon-heart.svg");
+  position: absolute;
+  left: -31px;
+  bottom: 10px;
+  width: 13px;
+  height: 12px;
+}
 
 .user-comment__author {
   font-weight: bold;
