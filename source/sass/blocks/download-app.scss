@@ -138,12 +138,21 @@
   .download-app {
     height: 746px;
     background-image: url("../../img/iphone-hand-desktop@1x.png");
-    background-position: left 145px bottom 1px;
+    background-position: left 25px bottom 1px;
+  }
+
+  .download-app__container {
+    width: 960px;
+    height: auto;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 
   .download-app__wrapper {
-    position: absolute;
-    margin-left: 130px;
+    margin-left: 0;
   }
 
   .download-app__title {

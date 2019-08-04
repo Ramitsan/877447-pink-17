@@ -67,6 +67,10 @@
   line-height: 24px;
 }
 
+.features__title--three br {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .features {
     padding-top: 47px;
@@ -119,6 +123,10 @@
     margin-bottom: 11px;
   }
 
+  .features__title--three br {
+    display: none;
+  }
+
   .features__slogan {
     font-size: 40px;
     line-height: 48px;
@@ -168,6 +176,7 @@
 
   .features__container {
     width: 100%;
+    padding-top: 55px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -241,6 +250,10 @@
     margin-bottom: 25px;
     font-size: 30px;
     line-height: 30px;
+  }
+
+  .features__title--three br {
+    display: block;
   }
 
   .features__description {

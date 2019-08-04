@@ -86,11 +86,19 @@
 
   .photo-users__rubric {
     width: 575px;
-    padding-top: 100px;
-    padding-bottom: 93px;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 
   .photo-users__slogan {
     font-size: 18px;
+  }
+
+  .photo-users__photo {
+    height: 400px;
+  }
+
+  .photo-users__item {
+    margin-bottom: 33px;
   }
 }

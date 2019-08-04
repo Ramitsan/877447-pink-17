@@ -81,7 +81,6 @@
   height: 12px;
 }
 
-
 @media (min-width: $tablet-width) {
   .photo-day::before {
     top: 57px;
@@ -135,5 +134,14 @@
 @media (min-width: $desktop-width) {
   .photo-day__wrapper {
     width: 940px;
+  }
+
+  .photo-day_photo {
+    height: 507px;
+  }
+
+  .photo-day__likes::before {
+
+    left: 422px;
   }
 }
