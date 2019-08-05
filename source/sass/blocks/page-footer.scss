@@ -3,12 +3,13 @@
   line-height: 18px;
   color: $dark-blue;
   text-align: center;
+  border: 3px solid red;
 }
 
 .page-footer__wrapper {
   min-height: 285px;
   padding-top: 40px;
-  padding-bottom: 29px;
+  padding-bottom: 27px;
 
   display: flex;
   flex-direction: column;
@@ -34,6 +35,7 @@
     align-items: center;
 
     margin: 0 auto;
+    padding-top: 25px;
   }
 
   .page-footer__logo {
