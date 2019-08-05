@@ -8,3 +8,13 @@
 .logo__link {
   display: block;
 }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 150px;
+  }
+
+  .logo__link {
+    padding-top: 20px;
+  }
+}

@@ -1,7 +1,7 @@
 .features {
   width: 100%;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 18px;
 }
 
 .features__wrapper {
@@ -11,7 +11,34 @@
 
 .features__slogan {
   font-size: 24px;
+  line-height: 30px;
   font-weight: 300;
+}
+
+.features__container {
+  width: 280px;
+  padding-top: 58px;
+  padding-bottom: 45px;
+}
+
+.features__item {
+  margin-bottom: 25px;
+}
+
+.features__item--three {
+  margin-bottom: 45px;
+}
+
+.features__description {
+  width: 255px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $dark-blue;
+}
+
+.features__description--two br {
+  display: none;
 }
 
 .features__list {
@@ -33,13 +60,22 @@
 }
 
 .features__title {
+  margin-bottom: 15px;
   font-weight: bold;
   color: #000000;
   font-size: 18px;
   line-height: 24px;
 }
 
+.features__title--three br {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .features {
+    padding-top: 47px;
+  }
+
   .features__wrapper {
     min-width: 620px;
     width: 100%;
@@ -47,8 +83,7 @@
 
   .features__container {
     width: 620px;
-    padding-top: 75px;
-    padding-bottom: 45px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -56,7 +91,8 @@
   }
 
   .features__list {
-    padding: 0;
+    margin: 0;
+    width: 310px;
     position: relative;
   }
 
@@ -67,11 +103,28 @@
   .features__list::before {
     content: url("../../img/iphone-screen-3-tablet@1x.png");
     position: absolute;
-    top: -30px;
-    left: -320px;
+    top: -50px;
+    left: -310px;
 
     width: 268px;
     height: 481px;
+  }
+
+  .features__item {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .features__item--two {
+    margin-bottom: 35px;
+  }
+
+  .features__title--three {
+    margin-bottom: 11px;
+  }
+
+  .features__title--three br {
+    display: none;
   }
 
   .features__slogan {
@@ -94,20 +147,50 @@
   }
 
   .features__description {
+    width: 308px;
     font-size: 14px;
     line-height: 24px;
     color: $dark-blue;
     text-align: left;
   }
+
+  .features__description--three {
+    margin-top: 11px;
+  }
+
+  .features__description--two br {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .features__container {
+  .features {
+    padding-top: 65px;
+  }
+
+  .features__wrapper {
     width: 960px;
     padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  .features__container {
+    width: 100%;
+    padding-top: 55px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .features__slogan {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .features__slogan--two {
+    width: 430px;
+    padding-bottom: 18px;
   }
 
   .features__list {
@@ -126,8 +209,13 @@
   }
 
   .features__item {
-    width: 235px;
+    width: 300px;
     position: relative;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .features__item--one::before {
@@ -157,9 +245,37 @@
     height: 302px;
   }
 
+  .features__title {
+    margin-top: 55px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .features__title--three br {
+    display: block;
+  }
+
   .features__description {
     text-align: center;
     font-size: 18px;
     line-height: 30px;
+    margin: 0 auto;
+  }
+
+  .features__description--one {
+    width: 243px;
+  }
+
+  .features__description--two {
+    width: 230px;
+  }
+
+  .features__description--three {
+    width: 235px;
+  }
+
+  .features__description--two br {
+    display: none;
   }
 }

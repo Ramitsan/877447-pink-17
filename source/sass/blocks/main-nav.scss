@@ -12,6 +12,14 @@
   font-weight: bold;
   color: $white;
   text-transform: uppercase;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__list {
@@ -27,10 +35,9 @@
 
 .main-nav__item {
   display: inline-block;
-  min-height: 65px;
-  padding: 20px 0;
+  padding: 15px 0;
   border-top: 1px solid #485461;
-  border-bottom: 2px solid #000000;
+  border-bottom: 1px solid #000000;
   text-align: center;
 }
 
@@ -51,7 +58,9 @@
 
   .main-nav__item {
     margin: 0;
-    padding: 45px 40px;
+    padding: 45px 80px;
+    padding-bottom: 40px;
+    padding-right: 0;
     text-align: center;
     border-top: none;
     border-bottom: none;
@@ -63,7 +72,16 @@
     text-transform: none;
   }
 
-  .main-nav__link-active {
+  .main-nav__link--active {
     border-bottom: 2px solid $white;
+
+    &:hover {
+      color: $white;
+    }
+
+    &:active {
+      color: $white;
+      opacity: 1;
+    }
   }
 }

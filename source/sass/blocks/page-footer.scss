@@ -3,10 +3,18 @@
   line-height: 18px;
   color: $dark-blue;
   text-align: center;
+  border: 3px solid red;
+}
+
+.page-footer__wrapper {
+  min-height: 285px;
+  padding-top: 40px;
+  padding-bottom: 27px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-footer__index {
@@ -20,17 +28,26 @@
 
   .page-footer__wrapper {
     width: 620px;
-    padding: 60px 10px;
+    min-height: 130px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     margin: 0 auto;
+    padding-top: 25px;
+  }
+
+  .page-footer__logo {
+    width: 150px;
+    margin-top: -15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 960px;
+    padding: 0 10px;
+    margin-top: 53px;
   }
 }
