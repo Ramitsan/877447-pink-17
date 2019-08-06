@@ -8,9 +8,9 @@
   background-position: left 0% bottom 270px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/iphone-hand-mobile@2x.png");
-      background-size: 258px auto;
-    }
+    background-image: url("../../img/iphone-hand-mobile@2x.png");
+    background-size: 258px auto;
+  }
 }
 
 .download-app__wrapper {
@@ -150,7 +150,7 @@
     background-image: url("../../img/iphone-hand-desktop@1x.png");
     background-position: left 25px bottom 1px;
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/iphone-hand-desktop@2x.png");
       background-size: 1050px auto;
     }

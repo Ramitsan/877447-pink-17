@@ -16,7 +16,6 @@
 
 .price-list__head--hidden {
   background-color: $light-gray;
-
 }
 
 .price-list__tariff-name {
@@ -72,7 +71,6 @@
 
 @media (min-width: $tablet-width) {
   .price-list {
-  transform: none;
-
-}
+    transform: none;
+  }
 }
