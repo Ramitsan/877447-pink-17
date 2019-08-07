@@ -1,0 +1,53 @@
+.contest__slogan {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.contest__text {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  text-align: center;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $dark-blue;
+}
+
+.contest__text--hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contest__slogan {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .contest__text {
+    width: 490px;
+    padding-top: 92px;
+    padding-bottom: 0;
+
+    font-size: 18px;
+  }
+
+  .contest__text--hidden {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+   .contest__slogan {
+    width: 940px;
+  }
+
+  .contest__text {
+    width: 760px;
+  }
+}

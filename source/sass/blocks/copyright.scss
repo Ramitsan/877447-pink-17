@@ -9,7 +9,12 @@
 
 .copyright__label {
   line-height: 18px;
+  margin-top: 16px;
 }
+
+ .copyright__link {
+    margin-top: 10px;
+  }
 
 .copyright__icon {
   path {
@@ -31,7 +36,6 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
-    // width: 150px;
     margin-right: 0;
   }
 
