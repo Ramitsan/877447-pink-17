@@ -5,13 +5,50 @@
   padding: 21px 20px;
 }
 
-.logo__link {
+.logo__mobile {
   display: block;
+}
+
+.logo__tablet {
+  display: none;
+}
+
+.logo__desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__mobile {
+    display: none;
+  }
+
+  .logo__tablet {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .logo__desktop {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .logo {
     width: 150px;
+  }
+
+  .logo__mobile {
+    display: none;
+  }
+
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__desktop {
+    display: block;
+    margin-top: -13px;
+    margin-left: -20px;
   }
 
   .logo__link {

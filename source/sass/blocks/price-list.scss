@@ -1,0 +1,76 @@
+.price-list {
+  transform: translateX(-400px);
+  border: 2px solid #e5e5e5;
+  border-collapse: collapse;
+  position: relative;
+}
+
+.price-list__row td {
+  border: 2px solid #e5e5e5;
+}
+
+.price-list__head {
+  background-color: $dark-blue;
+  padding: 23px 70px;
+}
+
+.price-list__head--hidden {
+  background-color: $light-gray;
+}
+
+.price-list__tariff-name {
+  min-width: 140px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $white;
+
+  margin: 0;
+}
+
+.price-list__cost {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: $white;
+
+  margin: 0;
+}
+
+.price-list__item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+}
+
+.price-list__value {
+  text-align: center;
+  padding: 12px 70px;
+}
+
+.price-list__value--yes::after {
+  content: url("../../img/icon-yes.svg");
+
+  text-align: center;
+  margin: 0 auto;
+
+  width: 30px;
+  height: 22px;
+}
+
+.price-list__value--no::after {
+  content: url("../../img/icon-no.svg");
+
+  text-align: center;
+  margin: 0 auto;
+
+  width: 27px;
+  height: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .price-list {
+    transform: none;
+  }
+}

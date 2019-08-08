@@ -40,6 +40,13 @@
   font-weight: normal;
 }
 
+.photo-users__image-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  height: 180px;
+}
+
 .photo-users__photo {
   width: 280px;
   height: 180px;
@@ -73,6 +80,11 @@
     font-size: 18px;
   }
 
+  .photo-users__image-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+
   .photo-users__photo {
     width: 300px;
     height: 300px;
@@ -92,6 +104,11 @@
 
   .photo-users__slogan {
     font-size: 18px;
+  }
+
+  .photo-users__image-wrapper {
+    width: 300px;
+    height: 400px;
   }
 
   .photo-users__photo {

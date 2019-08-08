@@ -1,0 +1,205 @@
+.form__item {
+  border: none;
+}
+
+.form__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form-name__wrapper {
+  margin-bottom: 30px;
+}
+
+.form-name__label {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $pink;
+
+  margin-left: 21px;
+}
+
+.form-name__input {
+  display: block;
+  width: 100%;
+  border: 1px solis #e5e5e5;
+  padding: 20px 23px;
+  margin-top: 5px;
+  margin-bottom: 17px;
+}
+
+.form-name__input::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $dark-blue;
+}
+
+.form-progress {
+  width: 100%;
+  background-color: $light-gray;
+  padding: 0;
+  margin: 0;
+}
+
+.form__title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $pink;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form__title--progress {
+  margin-top: 40px;
+  width: 220px;
+}
+
+.form-progress__list {
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+}
+
+.form-progress__item {
+  margin-bottom: 52px;
+}
+
+.form-progress__item:last-child {
+  margin-bottom: 49px;
+}
+
+.form-progress__label {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $dark-blue;
+
+  margin-left: 30px;
+}
+
+.form-contacts__wrapper {
+  padding-top: 27px;
+  padding-bottom: 12px;
+}
+
+.form-contacts__label {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $pink;
+
+  margin-left: 21px;
+}
+
+.form-contacts__input {
+  display: block;
+  width: 100%;
+  padding: 20px 23px;
+  margin-top: 6px;
+  margin-bottom: 17px;
+  border: 1px solis #e5e5e5;
+}
+
+.form-contacts__input::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $dark-blue;
+}
+
+.form-applications {
+  width: 100%;
+  background-color: $light-gray;
+  padding: 0;
+  margin: 0;
+}
+
+.form-applications__wrapper {
+  padding-top: 37px;
+}
+
+.form-applications__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.form-applications__item {
+  margin-bottom: 45px;
+}
+
+.form-applications__item:last-child {
+  margin-bottom: 48px;
+}
+
+.form-applications__label {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $dark-blue;
+
+  margin-left: 30px;
+}
+
+.form-emotions__wrapper {
+  padding-top: 27px;
+  text-align: center;
+}
+
+.form-emotions__label {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.form-emotions__comment {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 38px;
+  padding-top: 15px;
+  padding-bottom: 3px;
+  padding-left: 21px;
+  padding-right: 30px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $dark-blue;
+}
+
+.form__btn-submit {
+  width: 100%;
+  background-color: $mint;
+  border: 1px solid transparent;
+  padding: 16px 45px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.form__note {
+  text-align: center;
+  margin-top: 35px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $dark-blue;
+}
+
+.form__note sup {
+  color: $pink;
+}
