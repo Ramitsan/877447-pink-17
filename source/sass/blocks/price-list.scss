@@ -1,5 +1,5 @@
 .price-list {
-  transform: translateX(-400px);
+  transform: translateX(-262px);
   border: 2px solid #e5e5e5;
   border-collapse: collapse;
   position: relative;
@@ -38,33 +38,31 @@
 }
 
 .price-list__item {
-  font-weight: normal;
+  display: none;
+}
+
+.price-list__item-hidden {
   font-size: 14px;
   line-height: 30px;
+  text-transform: uppercase;
   color: $dark-blue;
+  font-weight: normal;
 }
 
 .price-list__value {
-  text-align: center;
-  padding: 12px 70px;
+  text-align: left;
+  padding: 25px 24px;
+  margin-right: 70px;
 }
 
 .price-list__value--yes::after {
   content: url("../../img/icon-yes.svg");
-
-  text-align: center;
-  margin: 0 auto;
-
   width: 30px;
   height: 22px;
 }
 
 .price-list__value--no::after {
   content: url("../../img/icon-no.svg");
-
-  text-align: center;
-  margin: 0 auto;
-
   width: 27px;
   height: 27px;
 }
@@ -73,4 +71,15 @@
   .price-list {
     transform: none;
   }
+
+.price-list__item {
+  display: block;
+  width: 100%;
+
+}
+
+.price-list__item-hidden {
+  display: none;
+}
+
 }

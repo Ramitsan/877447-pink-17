@@ -16,21 +16,15 @@
   margin-top: 10px;
 }
 
-.copyright__icon {
-  path {
-    fill: $pink;
-  }
+.copyright__link {
+  color: $pink;
 
   &:hover {
-    path {
-      fill: $dark-blue;
-    }
+    color: $dark-blue;
   }
 
   &:active {
-    path {
-      fill: transparentize($dark-blue, 0.3);
-    }
+    color: transparentize($dark-blue, 0.3);
   }
 }
 
