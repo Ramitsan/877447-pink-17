@@ -71,11 +71,9 @@
     font-weight: normal;
     text-transform: none;
 
- &:active {
-    color: transparentize($white, 0.3);
-  }
-
-
+    &:active {
+      color: transparentize($white, 0.3);
+    }
   }
 
   .main-nav__link--active {
