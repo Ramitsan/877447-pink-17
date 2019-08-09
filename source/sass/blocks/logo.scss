@@ -40,10 +40,6 @@
   }
 }
 
-.logo__desktop {
-  display: none;
-}
-
 @media (min-width: $desktop-width) {
   .logo {
     width: 150px;

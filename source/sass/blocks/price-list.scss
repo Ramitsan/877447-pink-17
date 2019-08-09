@@ -72,14 +72,12 @@
     transform: none;
   }
 
-.price-list__item {
-  display: block;
-  width: 100%;
+  .price-list__item {
+    display: block;
+    width: 100%;
+  }
 
-}
-
-.price-list__item-hidden {
-  display: none;
-}
-
+  .price-list__item-hidden {
+    display: none;
+  }
 }
