@@ -1,6 +1,44 @@
 .reviews {
   position: relative;
   z-index: 50;
-  top: -150px;
+  bottom: 64px;
   background-color: $white;
+  margin-bottom: 0;
+}
+
+.reviews__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 42px;
+}
+
+.reviews__item {
+  text-align: center;
+  margin: 0;
+}
+
+.reviews__author-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+}
+
+.reviews__text {
+  width: 270px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $dark-blue;
+}
+
+.reviews__prev,
+.reviews__next {
+  display: none;
+}
+
+.reviews__toggles span {
+  border: 3px solid $light-gray;
 }

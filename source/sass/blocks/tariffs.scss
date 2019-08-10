@@ -1,15 +1,24 @@
 .tariffs {
+  position: relative;
+  bottom: 70px;
   background-color: $light-gray;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0px -28px;
+  margin-top: 0;
 }
 
 .tariffs__wrapper {
   width: 100%;
   overflow: hidden;
+  padding-top: 130px;
+  padding-bottom: 40px;
 }
 
 .tariffs__table {
   width: 620px;
   background-color: $white;
+  margin-bottom: 33px;
 }
 
 .tariffs__toggles {
