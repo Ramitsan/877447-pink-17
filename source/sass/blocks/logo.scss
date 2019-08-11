@@ -9,6 +9,18 @@
   display: block;
 }
 
+.logo__link {
+  color: $white;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: transparentize($white, 0.3);
+  }
+}
+
 .logo__tablet {
   display: none;
 }
@@ -25,10 +37,6 @@
   .logo__tablet {
     display: block;
     margin-top: 5px;
-  }
-
-  .logo__desktop {
-    display: none;
   }
 }
 

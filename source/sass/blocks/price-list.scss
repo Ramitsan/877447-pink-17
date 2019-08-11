@@ -1,8 +1,16 @@
 .price-list {
-  transform: translateX(-400px);
-  border: 2px solid #e5e5e5;
+  transform: translateX(-258px);
   border-collapse: collapse;
   position: relative;
+
+
+  // top: 50%;
+  // left: 50%;
+  // width: 50%;
+  // height: 50%;
+  // transform: translateX(-50%) translateY(-50%);
+
+  // margin-top: 142px;
 }
 
 .price-list__row td {
@@ -11,7 +19,9 @@
 
 .price-list__head {
   background-color: $dark-blue;
-  padding: 23px 70px;
+  border: 2px solid #e5e5e5;
+  padding: 16px 68px;
+  padding-bottom: 20px;
 }
 
 .price-list__head--hidden {
@@ -23,9 +33,41 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  text-transform: uppercase;
   color: $white;
 
   margin: 0;
+  margin-bottom: 2px;
+}
+
+.price-list__tariff-name--hit {
+  position: relative;
+}
+
+.price-list__tariff-name--hit::before {
+  content: "";
+  background-image: url("../../img/bg-hit.svg");
+  position: absolute;
+  left: -70px;
+  top: -16px;
+  width: 74px;
+  height: 73px;
+}
+
+.price-list__tariff-name--hit::after {
+  content: "хит";
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $white;
+
+  position: absolute;
+  transform: rotate(-45deg);
+  left: -68px;
+  top: -10px;
+  width: 74px;
+  height: 73px;
 }
 
 .price-list__cost {
@@ -38,39 +80,55 @@
 }
 
 .price-list__item {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  color: $dark-blue;
+  display: none;
 }
 
-.price-list__value {
-  text-align: center;
-  padding: 12px 70px;
+.price-list__item-hidden {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $dark-blue;
+  font-weight: normal;
+}
+
+.price-list__cell {
+  text-align: left;
+  padding: 14px 24px;
+  padding-bottom: 15px;
+  position: relative;
 }
 
 .price-list__value--yes::after {
   content: url("../../img/icon-yes.svg");
-
-  text-align: center;
-  margin: 0 auto;
-
+  position: absolute;
   width: 30px;
   height: 22px;
+
+  right: 17px;
+  top: 18px;
 }
 
 .price-list__value--no::after {
   content: url("../../img/icon-no.svg");
-
-  text-align: center;
-  margin: 0 auto;
-
+  position: absolute;
   width: 27px;
   height: 27px;
+
+  right: 19px;
+  top: 13px;
 }
 
 @media (min-width: $tablet-width) {
   .price-list {
     transform: none;
+  }
+
+  .price-list__item {
+    display: table-cell;
+    width: 100%;
+  }
+
+  .price-list__item-hidden {
+    display: none;
   }
 }
