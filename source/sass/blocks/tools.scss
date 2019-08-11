@@ -1,0 +1,17 @@
+.tools__post-it,
+.tools__cancel {
+  width: 280px;
+  padding: 15px 50px;
+}
+
+.tools__post-it--active {
+  background-color: $white;
+  color: $pink;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+
+  border: 2px solid $pink;
+  border-radius: 30%;
+
+}

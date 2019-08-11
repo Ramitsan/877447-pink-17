@@ -1,0 +1,35 @@
+.add-photo__text {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 28px;
+}
+
+.add-photo__slogan {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: $dark-blue;
+  text-align: center;
+}
+
+.add-photo__slogan--one {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.add-photo__slogan--two {
+  margin-top: 0;
+  padding: 0;
+}
+
+.add-photo__form {
+  background-color: $light-gray;
+}
+
+.add-photo__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 20px;
+
+}
