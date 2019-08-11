@@ -1,7 +1,6 @@
 .reviews {
   position: relative;
   z-index: 50;
-  bottom: 64px;
   background-color: $white;
   margin-bottom: 0;
 }
@@ -32,6 +31,8 @@
   line-height: 30px;
   font-weight: normal;
   color: $dark-blue;
+
+  margin-top: 12px;
 }
 
 .reviews__prev,

@@ -24,12 +24,13 @@
 .photo-day__image-wrapper {
   margin: 0 auto;
   padding: 0;
-  width: 320px;
+  width: 100%;
   height: 137px;
 }
 
-.photo-day_photo {
+.photo-day__photo {
   width: 100%;
+  height: 100%;
 }
 
 .photo-day__wrapper {

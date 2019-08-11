@@ -65,11 +65,13 @@
 }
 
 .features__list {
+  position: relative;
   list-style: none;
   padding: 0;
   display: inline-block;
   text-align: center;
   margin-top: 5px;
+  margin-bottom: 272px;
 }
 
 .features__list::after {
@@ -77,12 +79,14 @@
   background-image: url("../../img/iphone-screen-mobile@1x.png");
   background-size: 157px 320px;
   display: inline-block;
-  text-align: center;
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 445px;
+  transform: translateX(-50%);
 
   width: 157px;
   height: 320px;
-  margin-top: -5px;
+
 
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
