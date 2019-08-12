@@ -68,6 +68,7 @@
 
 .form-progress__item {
   margin-bottom: 52px;
+  padding-left: 40px;
 }
 
 .form-progress__item:last-child {
@@ -75,12 +76,44 @@
 }
 
 .form-progress__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
   color: $dark-blue;
 
   margin-left: 30px;
+}
+
+.form-progress__option + label::before {
+  content: "";
+  position: absolute;
+  left: -71px;
+  top: -3px;
+
+  width: 39px;
+  height: 39px;
+
+  border: 2px solid #e5e5e5;
+  background-color: $white;
+}
+
+.form-progress__option:checked + label::after {
+  content: "";
+  background-image: url("../../img/icon-checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  position: absolute;
+  left: -63px;
+  top: 2px;
+
+  width: 25px;
+  height: 22px;
 }
 
 .form-contacts__wrapper {
@@ -132,6 +165,7 @@
 
 .form-applications__item {
   margin-bottom: 45px;
+  padding-left: 40px;
 }
 
 .form-applications__item:last-child {
@@ -139,6 +173,11 @@
 }
 
 .form-applications__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
@@ -146,6 +185,36 @@
 
   margin-left: 30px;
 }
+
+.form-applications__option + label::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -70px;
+
+  width: 39px;
+  height: 39px;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: $white;
+}
+
+.form-applications__option:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: -58px;
+
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+
+  background-color: $pink;
+}
+
+
 
 .form-emotions__wrapper {
   padding-top: 27px;
