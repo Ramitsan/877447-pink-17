@@ -156,17 +156,23 @@
       <form class="contest__form form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="form__item form-name">
           <div class="form__wrapper form-name__wrapper">
-            <label class="form-name__label form-name__label--surname" for="surname">Фамилия:</label>
-            <input class="form-name__input form-name__input--surname" id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
-            <label class="form-name__label form-name__label--name" for="name">Имя:</label>
-            <input class="form-name__input form-name__input--name" id="name" type="text" name="name" placeholder="Введите ваше имя *">
-            <label class="form-name__label form-name__label--patronymic" for="patronymic">Отчество:</label>
-            <input class="form-name__input form-name__input--patronymic" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+            <div class="form-name__item-wrapper">
+              <label class="form-name__label form-name__label--surname" for="surname">Фамилия:</label>
+              <input class="form-name__input form-name__input--surname" id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
+            </div>
+            <div class="form-name__item-wrapper">
+              <label class="form-name__label form-name__label--name" for="name">Имя:</label>
+              <input class="form-name__input form-name__input--name" id="name" type="text" name="name" placeholder="Введите ваше имя *">
+            </div>
+            <div class="form-name__item-wrapper">
+              <label class="form-name__label form-name__label--patronymic" for="patronymic">Отчество:</label>
+              <input class="form-name__input form-name__input--patronymic" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__item form-progress">
+          <legend class="form__title form__title--progress">Ваши безбашенные достижения в путешествии</legend>
           <div class="form__wrapper form-progress__wrapper">
-            <legend class="form__title form__title--progress">Ваши безбашенные достижения в путешествии</legend>
             <ul class="form-progress__list">
               <li class="form-progress__item" tabindex="0">
                 <input class="visually-hidden form-progress__option" type="checkbox" id="option_1" name="option_1" checked>
@@ -196,39 +202,45 @@
           </div>
         </fieldset>
         <fieldset class="form__item form-contacts">
+          <legend class="form__title form__title--contacts">Контактная информация</legend>
           <div class="form__wrapper form-contacts__wrapper">
-            <label class="form-contacts__label form-contacts__label--phone" for="phone">Номер телефона</label>
-            <input class="form-contacts__input form-contacts__input--phone" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
-            <label class="form-contacts__label form-contacts__label--email" for="name">Адрес почты</label>
-            <input class="form-contacts__input form-contacts__input--email" id="email" type="email" name="email" placeholder="Введите почту *">
+            <div class="form-contacts__item-wrapper form-contacts__item-wrapper--phone">
+              <label class="form-contacts__label form-contacts__label--phone" for="phone">Номер телефона</label>
+              <input class="form-contacts__input form-contacts__input--phone" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="form-contacts__item-wrapper form-contacts__item-wrapper--address">
+              <label class="form-contacts__label form-contacts__label--email" for="name">Адрес почты</label>
+              <input class="form-contacts__input form-contacts__input--email" id="email" type="email" name="email" placeholder="Введите почту *">
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__item form-applications">
+          <legend class="form__title form__title--applications">С каким приложением путешествовали?</legend>
           <div class="form__wrapper form-applications__wrapper">
-            <legend class="form__title form__title--applications">С каким приложением путешествовали?</legend>
             <ul class="form-applications__list">
               <li class="form-applications__item" tabindex="0">
-                <input class="visually-hidden form-applications__option" type="radio" id="iOS" name="iOS" value="1" checked>
+                <input class="visually-hidden form-applications__option" type="radio" id="iOS" name="operating_system" value="1" checked>
                 <label class="form-applications__label" for="iOS">Pink для iOS</label>
               </li>
               <li class="form-applications__item" tabindex="0">
-                <input class="visually-hidden form-applications__option" type="radio" id="Android" name="Android" value="2">
+                <input class="visually-hidden form-applications__option" type="radio" id="Android" name="operating_system" value="2">
                 <label class="form-applications__label" for="Android">Pink на Android</label>
               </li>
               <li class="form-applications__item" tabindex="0">
-                <input class="visually-hidden form-applications__option" type="radio" id="Windows" name="Windows" value="3">
+                <input class="visually-hidden form-applications__option" type="radio" id="Windows" name="operating_system" value="3">
                 <label class="form-applications__label" for="Windows">Windows Phone</label>
               </li>
             </ul>
           </div>
         </fieldset>
         <fieldset class="form__item form-emotions">
+          <legend class="form__title form__title--emotions">Опишите свои эмоции</legend>
           <div class="form__wrapper form-emotions__wrapper">
-            <label class="form-emotions__label" for="comment-field">Опишите свои эмоции</label>
+            <label class="visually-hidden" for="comment-field">Текст комментария</label>
             <textarea class="form-emotions__comment" name="comment" id="comment-field" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
           </div>
         </fieldset>
-        <div class="form__wrapper">
+        <div class="form__wrapper form__btn-wrapper">
           <button class="form__btn-submit" type="submit">Отправить форму</button>
           <p class="form__note"><sup>*</sup>— обязательные поля</p>
         </div>
