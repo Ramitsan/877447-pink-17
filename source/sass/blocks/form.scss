@@ -90,7 +90,7 @@
   margin-left: 30px;
 }
 
-.form-progress__option+label::before {
+.form-progress__option + label::before {
   content: "";
   position: absolute;
   left: -71px;
@@ -103,7 +103,7 @@
   background-color: $white;
 }
 
-.form-progress__option:checked+label::after {
+.form-progress__option:checked + label::after {
   content: "";
   background-image: url("../../img/icon-checkbox.svg");
   background-repeat: no-repeat;
@@ -191,7 +191,7 @@
   margin-left: 30px;
 }
 
-.form-applications__option+label::before {
+.form-applications__option + label::before {
   content: "";
   position: absolute;
   top: -6px;
@@ -205,7 +205,7 @@
   background-color: $white;
 }
 
-.form-applications__option:checked+label::after {
+.form-applications__option:checked + label::after {
   content: "";
   position: absolute;
   top: 6px;
@@ -345,11 +345,11 @@
     margin-bottom: 38px;
   }
 
-  .form-applications__option+label::before {
+  .form-applications__option + label::before {
     left: -58px;
   }
 
-  .form-applications__option:checked+label::after {
+  .form-applications__option:checked + label::after {
     left: -46px;
   }
 
@@ -457,11 +457,11 @@
     margin-left: 19px;
   }
 
-  .form-progress__option+label::before {
+  .form-progress__option + label::before {
     left: -59px;
   }
 
-  .form-progress__option:checked+label::after {
+  .form-progress__option:checked + label::after {
     left: -53px;
   }
 
@@ -529,7 +529,7 @@
 
     margin-right: 35px;
     padding: 0;
-    padding-bottom: 7px
+    padding-bottom: 7px;
   }
 
   .form-name__wrapper {
@@ -539,7 +539,7 @@
   }
 
   .form-name__item-wrapper:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .form-applications {
