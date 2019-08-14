@@ -90,7 +90,7 @@
   margin-left: 30px;
 }
 
-.form-progress__option + label::before {
+.form-progress__option+label::before {
   content: "";
   position: absolute;
   left: -71px;
@@ -103,7 +103,7 @@
   background-color: $white;
 }
 
-.form-progress__option:checked + label::after {
+.form-progress__option:checked+label::after {
   content: "";
   background-image: url("../../img/icon-checkbox.svg");
   background-repeat: no-repeat;
@@ -191,7 +191,7 @@
   margin-left: 30px;
 }
 
-.form-applications__option + label::before {
+.form-applications__option+label::before {
   content: "";
   position: absolute;
   top: -6px;
@@ -205,7 +205,7 @@
   background-color: $white;
 }
 
-.form-applications__option:checked + label::after {
+.form-applications__option:checked+label::after {
   content: "";
   position: absolute;
   top: 6px;
@@ -276,6 +276,10 @@
   color: $pink;
 }
 
+.form__note span {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .form {
     display: flex;
@@ -341,11 +345,11 @@
     margin-bottom: 38px;
   }
 
-  .form-applications__option + label::before {
+  .form-applications__option+label::before {
     left: -58px;
   }
 
-  .form-applications__option:checked + label::after {
+  .form-applications__option:checked+label::after {
     left: -46px;
   }
 
@@ -453,11 +457,11 @@
     margin-left: 19px;
   }
 
-  .form-progress__option + label::before {
+  .form-progress__option+label::before {
     left: -59px;
   }
 
-  .form-progress__option:checked + label::after {
+  .form-progress__option:checked+label::after {
     left: -53px;
   }
 
@@ -480,12 +484,13 @@
 
   .form-emotions__comment {
     width: 497px;
+    height: 193px;
     margin: 0 auto;
     padding-bottom: 0;
   }
 
   .form-emotions__wrapper {
-    padding-bottom: 40px;
+    padding-bottom: 46px;
   }
 
   .form__btn-wrapper {
@@ -503,5 +508,155 @@
   .form__note {
     width: 300px;
     text-align: right;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 940px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-name {
+    width: 435px;
+    margin: 0;
+
+    margin-right: 35px;
+    padding: 0;
+    padding-bottom: 7px
+  }
+
+  .form-name__wrapper {
+    width: 434px;
+    margin: 0;
+    padding-top: 9px;
+  }
+
+  .form-name__item-wrapper:last-child {
+    margin-bottom: 0px;
+  }
+
+  .form-applications {
+    width: 435px;
+    height: 307px;
+    margin: 0;
+
+    padding: 0;
+  }
+
+  .form-applications__wrapper {
+    width: 377px;
+  }
+
+  .form__title--applications {
+    padding: 0 10px;
+  }
+
+  .form-applications__list {
+    margin-top: 13px;
+    margin-left: 54px;
+  }
+
+  .form-applications__item {
+    margin-bottom: 42px;
+  }
+
+  .form-contacts {
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 56px;
+    padding: 0;
+  }
+
+  .form-contacts__wrapper {
+    width: 936px;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-contacts__item-wrapper {
+    width: 50%;
+    margin-bottom: 13px;
+  }
+
+  .form-contacts__item-wrapper--phone {
+    margin-left: 54px;
+    margin-right: 32px;
+  }
+
+  .form-contacts__item-wrapper--address {
+    margin-left: 32px;
+    margin-right: 63px;
+  }
+
+  .form__title--contacts {
+    margin-bottom: 27px;
+  }
+
+  .form-progress {
+    width: 940px;
+    padding-bottom: 0;
+    margin-bottom: 52px;
+  }
+
+  .form-progress__wrapper {
+    width: 820px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .form-progress__list {
+    height: 164px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .form-progress__item {
+    margin-right: 63px;
+  }
+
+  .form-emotions {
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+
+  .form-emotions__wrapper {
+    width: 936px;
+    margin: 0;
+    padding: 24px 57px;
+    padding-bottom: 37px;
+  }
+
+  .form-emotions__comment {
+    width: 100%;
+    height: 129px;
+  }
+
+  .form__btn-wrapper {
+    width: 940px;
+  }
+
+  .form__note {
+    width: 320px;
+  }
+
+  .form__note span {
+    display: inline;
   }
 }
