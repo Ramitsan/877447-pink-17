@@ -9,16 +9,21 @@
   position: absolute;
 
   background-color: $pink;
-  padding: 7px 23px;
+  padding: 7px 15px;
   padding-bottom: 13px;
   color: $white;
   font-size: 12px;
   line-height: 24px;
+  font-weight: bold;
   text-transform: uppercase;
 
   right: 20px;
   width: 140px;
   height: 36px;
+
+  path {
+    fill: $pink;
+  }
 }
 
 .photo-day__image-wrapper {

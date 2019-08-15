@@ -2,15 +2,6 @@
   transform: translateX(-258px);
   border-collapse: collapse;
   position: relative;
-
-
-  // top: 50%;
-  // left: 50%;
-  // width: 50%;
-  // height: 50%;
-  // transform: translateX(-50%) translateY(-50%);
-
-  // margin-top: 142px;
 }
 
 .price-list__row td {
@@ -98,37 +89,83 @@
   position: relative;
 }
 
-.price-list__value--yes::after {
-  content: url("../../img/icon-yes.svg");
-  position: absolute;
-  width: 30px;
-  height: 22px;
-
-  right: 17px;
-  top: 18px;
-}
-
-.price-list__value--no::after {
-  content: url("../../img/icon-no.svg");
-  position: absolute;
-  width: 27px;
-  height: 27px;
-
-  right: 19px;
-  top: 13px;
-}
-
 @media (min-width: $tablet-width) {
   .price-list {
     transform: none;
+    width: 100%;
+  }
+
+  .price-list__head--hidden {
+    border-top: none;
+    border-left: none;
   }
 
   .price-list__item {
     display: table-cell;
-    width: 100%;
+    padding: 7px 18px;
+
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    color: $dark-blue;
   }
 
   .price-list__item-hidden {
     display: none;
+  }
+
+  .price-list__row th,
+  .price-list__row td {
+    width: 152px;
+  }
+
+  .price-list__head {
+    padding: 15px 0;
+    padding-bottom: 5px;
+  }
+
+  .price-list__tariff-name {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .price-list__cost {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .price-list__tariff-name--hit::before {
+    content: "";
+    background-image: url("../../img/bg-hit-tablet.svg");
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 61px;
+    height: 61px;
+  }
+
+  .price-list__tariff-name--hit::after {
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 1px;
+    top: -18px;
+  }
+
+  .price-list__value--yes::after {
+    content: url("../../img/icon-yes.svg");
+    position: absolute;
+
+    right: 59px;
+    top: 10px;
+  }
+
+  .price-list__value--no::after {
+    content: url("../../img/icon-no.svg");
+    position: absolute;
+
+    right: 61px;
+    top: 7px;
   }
 }

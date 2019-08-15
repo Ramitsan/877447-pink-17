@@ -112,7 +112,7 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    padding-top: 47px;
+    padding-top: 49px;
   }
 
   .features__wrapper {
@@ -122,7 +122,8 @@
 
   .features__container {
     width: 620px;
-    padding-bottom: 0;
+    padding-top: 102px;
+    padding-bottom: 9px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -144,8 +145,8 @@
     background-image: url("../../img/iphone-screen-3-tablet@1x.png");
     background-size: 268px 481px;
     position: absolute;
-    top: -50px;
-    left: -310px;
+    top: -52px;
+    left: -309px;
 
     width: 268px;
     height: 481px;
@@ -159,7 +160,7 @@
 
   .features__item {
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
 
   .features__item--two {
@@ -186,11 +187,12 @@
 
   .features__slogan--two {
     width: 340px;
-    padding-bottom: 45px;
+    padding-bottom: 0;
   }
 
   .features-info {
     width: 310px;
+    background-position: 1px -100px;
   }
 
   .features__description {
