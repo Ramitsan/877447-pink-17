@@ -23,3 +23,20 @@
 .tariffs__toggles {
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .tariffs {
+    background-position: 1px -29px;
+  }
+
+  .tariffs__wrapper {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 35px;
+  }
+
+  .tariffs__toggles {
+    display: none;
+  }
+}

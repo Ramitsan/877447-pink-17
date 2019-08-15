@@ -1,6 +1,5 @@
 .copyright {
   width: 130px;
-  // padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,6 +27,7 @@
 @media (min-width: $tablet-width) {
   .copyright {
     margin-right: 0;
+    margin-top: 10px;
   }
 
   .copyright__link {
