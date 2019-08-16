@@ -34,7 +34,8 @@
   height: 51px;
   vertical-align: middle;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: $dark-blue;
   }
 

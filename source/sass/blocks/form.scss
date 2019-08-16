@@ -40,8 +40,10 @@
 
 .form-progress {
   width: 100%;
+  position: relative;
   background-color: $light-gray;
   padding: 0;
+  padding-top: 103px;
   margin: 0;
 }
 
@@ -57,8 +59,13 @@
 }
 
 .form__title--progress {
-  margin-top: 40px;
   width: 220px;
+  position: absolute;
+  margin: auto;
+  top: 38px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .form-progress__list {
@@ -154,9 +161,21 @@
 
 .form-applications {
   width: 100%;
+  position: relative;
   background-color: $light-gray;
   padding: 0;
+  padding-top: 62px;
   margin: 0;
+}
+
+.form__title--applications {
+  width: 177px;
+  position: absolute;
+  margin: auto;
+  top: 38px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .form-applications__wrapper {
@@ -216,6 +235,20 @@
   border-radius: 50%;
 
   background-color: $pink;
+}
+
+.form-emotions {
+  position: relative;
+  padding-top: 32px;
+}
+
+.form__title--emotions {
+  position: absolute;
+  margin: auto;
+  top: 36px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .form-emotions__wrapper {
@@ -319,11 +352,12 @@
     order: 2;
     background-color: $white;
     margin: 0 auto;
+    margin-bottom: 58px;
 
     border: 2px solid #e5e5e5;
     max-width: 620px;
+    padding-top: 0;
     padding-bottom: 10px;
-    margin-bottom: 58px;
   }
 
   .form-applications__wrapper {
@@ -341,6 +375,7 @@
 
   .form__title--applications {
     width: 370px;
+    position: static;
     padding: 0 25px;
     margin-bottom: 38px;
   }
@@ -437,6 +472,7 @@
     background-color: $white;
     border: 2px solid #e5e5e5;
     width: 620px;
+    padding-top: 0;
     padding-bottom: 5px;
     margin: 0 auto;
     margin-bottom: 56px;
@@ -444,6 +480,7 @@
 
   .form__title--progress {
     width: 433px;
+    position: static;
     padding: 0 20px;
     margin-bottom: 33px;
   }
@@ -470,6 +507,7 @@
     border: 2px solid #e5e5e5;
     width: 620px;
     padding: 0;
+    padding-top: 0;
     padding-bottom: 5px;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -478,6 +516,7 @@
 
   .form__title--emotions {
     width: 260px;
+    position: static;
     padding: 0 40px;
     margin-bottom: 10px;
   }
@@ -499,6 +538,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+
+    padding-bottom: 48px;
   }
 
   .form__btn-submit {
