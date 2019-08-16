@@ -124,6 +124,7 @@
   .reviews__buttons::before {
     content: "";
     position: absolute;
+    cursor: pointer;
     background-image: url("../../img/icon-review-arrow-left.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -136,6 +137,7 @@
   .reviews__buttons::after {
     content: "";
     position: absolute;
+    cursor: pointer;
     background-image: url("../../img/icon-review-arrow-right.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
