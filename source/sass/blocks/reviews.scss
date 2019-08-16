@@ -116,10 +116,10 @@
     display: none;
   }
 
-.reviews__buttons {
-  display: block;
-  position: relative;
-}
+  .reviews__buttons {
+    display: block;
+    position: relative;
+  }
 
   .reviews__buttons::before {
     content: "";
@@ -147,5 +147,4 @@
     width: 22px;
     height: 42px;
   }
-
 }
