@@ -12,7 +12,8 @@
 .logo__link {
   color: $white;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $pink;
   }
 

@@ -230,8 +230,10 @@
             <cite class="reviews__author-name">Николай Петров <span class="reviews__author-profession">25 лет, водитель трамвая</span></cite>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
+          <div class="reviews__buttons">
+            <button class="visually-hidden reviews__prev" type="button">Предыдущий отзыв</button>
+            <button class="visually-hidden reviews__next" type="button">Следующий отзыв</button>
+          </div>
         </div>
         <div class="reviews__toggles slider__toggles">
           <span class="slider__toggle slider__toggle--active"></span>
@@ -244,66 +246,68 @@
       <div class="tariffs__wrapper">
         <h2 class="visually-hidden">Тарифы и цены</h2>
         <table class="tariffs__table price-list">
-          <tr class="price-list__row">
-            <th class="price-list__item price-list__head price-list__head--hidden"></th>
-            <th class="price-list__head">
-              <p class="price-list__tariff-name">База</p>
-              <p class="price-list__cost">1,99 USD</p>
-            </th>
-            <th class="price-list__head">
-              <p class="price-list__central price-list__tariff-name price-list__tariff-name--hit">Стандарт</p>
-              <p class="price-list__cost">3,99 USD</p>
-            </th>
-            <th class="price-list__head">
-              <p class="price-list__tariff-name">Анлим</p>
-              <p class="price-list__cost">9,99 USD</p>
-            </th>
-          </tr>
-          <tr class="price-list__row">
-            <td class="price-list__item">Розовый фильтр</td>
-            <td class="price-list__cell ">
-              <span class="price-list__item-hidden">Розовый фильтр</span>
-              <span class="price-list__value price-list__value--yes"></span>
-            </td>
-            <td class="price-list__central price-list__cell">
-              <span class="price-list__item-hidden">Розовый фильтр</span>
-              <span class="price-list__value price-list__value--yes"></span>
-            </td>
-            <td class="price-list__cell">
-              <span class="price-list__item-hidden">Розовый фильтр</span>
-              <span class="price-list__value price-list__value--yes"></span>
-            </td>
-          </tr>
-          <tr class="price-list__row">
-            <td class="price-list__item">Смайлики</td>
-            <td class="price-list__cell">
-              <span class="price-list__item-hidden">Смайлики</span>
-              <span class="price-list__value price-list__value--no"></span>
-            </td>
-            <td class="price-list__central price-list__cell">
-              <span class="price-list__item-hidden">Смайлики</span>
-              <span class="price-list__value price-list__value--yes"></span>
-            </td>
-            <td class="price-list__cell">
-              <span class="price-list__item-hidden">Смайлики</span>
-              <span class="price-list__value price-list__value--yes"></span>
-            </td>
-          </tr>
-          <tr class="price-list__row">
-            <td class="price-list__item">Комментарии</td>
-            <td class="price-list__cell">
-              <span class="price-list__item-hidden">Комментарии</span>
-              <span class="price-list__value price-list__value--no"></span>
-            </td>
-            <td class="price-list__central price-list__cell">
-              <span class="price-list__item-hidden">Комментарии</span>
-              <span class="price-list__value price-list__value--no"></span>
-            </td>
-            <td class="price-list__cell">
-              <span class="price-list__item-hidden">Комментарии</span>
-              <span class="price-list__value price-list__value--yes"></span>
-            </td>
-          </tr>
+          <tbody class="price-list__table">
+            <tr class="price-list__row">
+              <th class="price-list__item price-list__head price-list__head--hidden"></th>
+              <th class="price-list__head">
+                <p class="price-list__tariff-name">База</p>
+                <p class="price-list__cost">1,99 USD</p>
+              </th>
+              <th class="price-list__head">
+                <p class="price-list__central price-list__tariff-name price-list__tariff-name--hit">Стандарт</p>
+                <p class="price-list__cost">3,99 USD</p>
+              </th>
+              <th class="price-list__head">
+                <p class="price-list__tariff-name">Анлим</p>
+                <p class="price-list__cost">9,99 USD</p>
+              </th>
+            </tr>
+            <tr class="price-list__row">
+              <td class="price-list__item">Розовый фильтр</td>
+              <td class="price-list__cell ">
+                <span class="price-list__item-hidden">Розовый фильтр</span>
+                <span class="price-list__value price-list__value--yes"></span>
+              </td>
+              <td class="price-list__central price-list__cell">
+                <span class="price-list__item-hidden">Розовый фильтр</span>
+                <span class="price-list__value price-list__value--yes"></span>
+              </td>
+              <td class="price-list__cell">
+                <span class="price-list__item-hidden">Розовый фильтр</span>
+                <span class="price-list__value price-list__value--yes"></span>
+              </td>
+            </tr>
+            <tr class="price-list__row">
+              <td class="price-list__item">Смайлики</td>
+              <td class="price-list__cell">
+                <span class="price-list__item-hidden">Смайлики</span>
+                <span class="price-list__value price-list__value--no"></span>
+              </td>
+              <td class="price-list__central price-list__cell">
+                <span class="price-list__item-hidden">Смайлики</span>
+                <span class="price-list__value price-list__value--yes"></span>
+              </td>
+              <td class="price-list__cell">
+                <span class="price-list__item-hidden">Смайлики</span>
+                <span class="price-list__value price-list__value--yes"></span>
+              </td>
+            </tr>
+            <tr class="price-list__row">
+              <td class="price-list__item">Комментарии</td>
+              <td class="price-list__cell">
+                <span class="price-list__item-hidden">Комментарии</span>
+                <span class="price-list__value price-list__value--no"></span>
+              </td>
+              <td class="price-list__central price-list__cell">
+                <span class="price-list__item-hidden">Комментарии</span>
+                <span class="price-list__value price-list__value--no"></span>
+              </td>
+              <td class="price-list__cell">
+                <span class="price-list__item-hidden">Комментарии</span>
+                <span class="price-list__value price-list__value--yes"></span>
+              </td>
+            </tr>
+          </tbody>
         </table>
         <div class="tariffs__toggles slider__toggles">
           <span class="slider__toggle"></span>

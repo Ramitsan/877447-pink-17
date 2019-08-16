@@ -13,7 +13,8 @@
   color: $white;
   text-transform: uppercase;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $pink;
   }
 
@@ -79,7 +80,8 @@
   .main-nav__link--active {
     border-bottom: 2px solid $white;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $white;
     }
 
