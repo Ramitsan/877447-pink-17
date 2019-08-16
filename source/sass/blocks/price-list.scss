@@ -89,6 +89,26 @@
   position: relative;
 }
 
+.price-list__value--yes::after {
+  content: url("../../img/icon-yes.svg");
+  position: absolute;
+  width: 30px;
+  height: 22px;
+
+  right: 17px;
+  top: 18px;
+}
+
+.price-list__value--no::after {
+  content: url("../../img/icon-no.svg");
+  position: absolute;
+  width: 27px;
+  height: 27px;
+
+  right: 19px;
+  top: 13px;
+}
+
 @media (min-width: $tablet-width) {
   .price-list {
     transform: none;
@@ -154,17 +174,11 @@
   }
 
   .price-list__value--yes::after {
-    content: url("../../img/icon-yes.svg");
-    position: absolute;
-
     right: 59px;
     top: 10px;
   }
 
   .price-list__value--no::after {
-    content: url("../../img/icon-no.svg");
-    position: absolute;
-
     right: 61px;
     top: 7px;
   }
