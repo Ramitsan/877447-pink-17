@@ -65,6 +65,16 @@
   background-color: $white;
   color: $pink;
   border: 2px solid $pink;
+
+  &:hover,
+  &:focus {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &:active {
+    color: transparentize($white, 0.7);
+  }
 }
 
 .add-photo__cancel {
@@ -72,6 +82,18 @@
   opacity: 0.1;
   border: 2px solid $dark-blue;
   margin-bottom: 45px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    border-color: $dark-blue;
+    opacity: 0.3;
+    color: transparentize($white, 0.7);
+  }
 }
 
 @media (min-width: $tablet-width) {

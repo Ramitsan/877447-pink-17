@@ -29,6 +29,16 @@
   margin-bottom: 17px;
 
   border: 2px solid #e5e5e5;
+
+  &:hover {
+    outline: 0;
+    border-color: $dark-blue;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: $pink;
+  }
 }
 
 .form-name__input::placeholder {
@@ -110,6 +120,16 @@
   background-color: $white;
 }
 
+.form-progress__option + label:hover::before {
+  outline: 0;
+  border-color: $dark-blue;
+}
+
+.form-progress__option + label:active::before {
+  outline: 0;
+  border-color: $pink;
+}
+
 .form-progress__option:checked + label::after {
   content: "";
   background-image: url("../img/icon-checkbox.svg");
@@ -150,6 +170,16 @@
   margin-top: 6px;
   margin-bottom: 17px;
   border: 2px solid #e5e5e5;
+
+  &:hover {
+    outline: 0;
+    border-color: $dark-blue;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: $pink;
+  }
 }
 
 .form-contacts__input::placeholder {
@@ -237,6 +267,16 @@
   background-color: $pink;
 }
 
+.form-applications__option + label:hover::before {
+  outline: 0;
+  border-color: $dark-blue;
+}
+
+.form-applications__option + label:active::before {
+  outline: 0;
+  border-color: $pink;
+}
+
 .form-emotions {
   position: relative;
   padding-top: 32px;
@@ -279,19 +319,25 @@
   font-weight: normal;
   color: $dark-blue;
   border: 2px solid #e5e5e5;
+
+  &:hover {
+    outline: 0;
+    border-color: $dark-blue;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: $pink;
+  }
 }
 
 .form__btn-submit {
   width: 100%;
-  background-color: $mint;
-  border: 1px solid transparent;
   padding: 16px 45px;
-
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  color: $white;
 }
 
 .form__note {

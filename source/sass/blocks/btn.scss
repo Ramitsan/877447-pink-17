@@ -1,0 +1,23 @@
+.btn {
+  border: 1px solid transparent;
+  vertical-align: middle;
+}
+
+.btn__green {
+  background-color: $mint;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: transparentize($white, 0.7);
+  }
+}
+
+.btn__green--disabled {
+  background-color: #e5e5e5;
+  color: $white;
+}
