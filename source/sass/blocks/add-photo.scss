@@ -32,3 +32,48 @@
   margin: 0 auto;
   padding-top: 20px;
 }
+
+.add-photo__button {
+  width: 280px;
+  padding: 15px 50px;
+  border-radius: 30px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.add-photo__post-it {
+  margin: 13px 0;
+}
+
+.add-photo__button--active {
+  background-color: $white;
+  color: $pink;
+  border: 2px solid $pink;
+}
+
+.add-photo__cancel {
+  background-color: $light-gray;
+  opacity: 0.1;
+  border: 2px solid $dark-blue;
+  margin-bottom: 45px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .add-photo__text {
+    width: 620px;
+  }
+
+  .add-photo__slogan {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-photo__text {
+    width: 940px;
+  }
+}

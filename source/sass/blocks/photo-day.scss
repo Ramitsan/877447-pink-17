@@ -34,7 +34,7 @@
 }
 
 .photo-day__photo {
-  width: 100%;
+  width: 1200px;
   height: 100%;
 }
 
@@ -86,7 +86,7 @@
 }
 
 .photo-day__likes::before {
-  content: url("../../img/icon-heart.svg");
+  content: url("../img/icon-heart.svg");
   position: absolute;
   left: -31px;
   bottom: 10px;
@@ -150,11 +150,24 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photo-day {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
   .photo-day__wrapper {
     width: 940px;
   }
 
+  .photo-day__image-wrapper {
+    min-width: 960px;
+    height: 506px;
+    overflow: hidden;
+  }
+
   .photo-day_photo {
+    width: 1200px;
     height: 507px;
   }
 

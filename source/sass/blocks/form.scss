@@ -112,7 +112,7 @@
 
 .form-progress__option:checked + label::after {
   content: "";
-  background-image: url("../../img/icon-checkbox.svg");
+  background-image: url("../img/icon-checkbox.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -445,7 +445,7 @@
 
   .form-contacts__item-wrapper--phone::after {
     content: "";
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     position: absolute;
     z-index: 4;
     width: 20px;
@@ -457,7 +457,7 @@
 
   .form-contacts__item-wrapper--address::after {
     content: "";
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
     position: absolute;
     z-index: 4;
     width: 18px;

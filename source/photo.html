@@ -15,7 +15,7 @@
 
 <body>
   <!-- svg-спрайт, собранный автоматически, в котором не работают :hover и :activ  -->
-<!--   <div style="display:none">
+  <!--   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div> -->
   <!-- svg-спрайт, собранный вручную, в котором работают :hover и :active через свойство currentColor -->
@@ -337,16 +337,40 @@
               </picture>
             </div>
             <div class="your-photo__tools tools">
-              <button class="btn tools__btn tools__btn--active tools__btn--crop"></button>
-              <!-- <input class="tools__range" type="range"> -->
-              <button class="btn tools__btn tools__btn--fill"></button>
-              <!-- <input class="tools__range" type="range"> -->
-              <button class="btn tools__btn tools__btn--contrast"></button>
-              <!-- <input class="tools__range" type="range"> -->
-              <button class="btn tools__post-it tools__post-it--active" type="submit">Запостить</button>
-              <button class="btn tools__cancel" type="reset">Отмена</button>
+              <div class="tools__wrapper">
+                <button class="btn tools__btn tools__crop tools__crop--active"></button>
+                <div class="tools__range tools__range--crop">
+                  <div class="tools__scale tools__scale--crop">
+                    <div class="tools__bar tools__bar--crop"></div>
+                  </div>
+                  <div class="tools__toggle tools__toggle-crop"></div>
+                </div>
+              </div>
+              <div class="tools__wrapper">
+                <button class="btn tools__btn tools__fill"></button>
+                <div class="tools__range tools__range--fill">
+                  <div class="tools__scale tools__scale--fill">
+                    <div class="tools__bar tools__bar--fill"></div>
+                  </div>
+                  <div class="tools__toggle tools__toggle-fill"></div>
+                </div>
+              </div>
+              <div class="tools__wrapper">
+                <button class="btn tools__btn tools__contrast"></button>
+                <div class="tools__range tools__range--contrast">
+                  <div class="tools__scale tools__scale--contrast">
+                    <div class="tools__bar tools__bar--contrast"></div>
+                  </div>
+                  <div class="tools__toggle tools__toggle-contrast"></div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+        <hr class="tools__line">
+        <div class="add-photo__wrapper">
+          <button class="btn add-photo__button add-photo__post-it add-photo__button--active" type="submit">Запостить</button>
+          <button class="btn add-photo__button add-photo__cancel add-photo__button--disabled" type="reset">Отмена</button>
         </div>
       </form>
     </section>
