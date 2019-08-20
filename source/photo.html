@@ -325,53 +325,58 @@
       </div>
       <form class="add-photo__form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="add-photo__wrapper">
-          <div class="add-photo__user your-photo">
-            <div class="your-photo__preview">
+          <div class="add-photo__user">
+            <div class="add-photo__preview">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-                <img class="your-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Фото зимней дороги">
+                <img class="add-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Фото зимней дороги">
               </picture>
             </div>
-            <div class="your-photo__tools tools">
-              <div class="tools__wrapper">
-                <button class="btn tools__btn tools__crop tools__crop--active"></button>
-                <div class="tools__range tools__range--crop">
-                  <div class="tools__scale tools__scale--crop">
-                    <div class="tools__bar tools__bar--crop"></div>
+            <div class="add-photo__edit">
+              <div class="add-photo__tools tools">
+                <div class="tools__wrapper">
+                  <button class="btn tools__btn tools__crop tools__crop--active"></button>
+                  <div class="tools__range tools__range--crop">
+                    <div class="tools__scale tools__scale--crop">
+                      <div class="tools__bar tools__bar--crop"></div>
+                    </div>
+                    <div class="tools__toggle tools__toggle-crop"></div>
                   </div>
-                  <div class="tools__toggle tools__toggle-crop"></div>
                 </div>
+                <hr class="tools__line tools__line--small">
+                <div class="tools__wrapper">
+                  <button class="btn tools__btn tools__fill"></button>
+                  <div class="tools__range tools__range--fill">
+                    <div class="tools__scale tools__scale--fill">
+                      <div class="tools__bar tools__bar--fill"></div>
+                    </div>
+                    <div class="tools__toggle tools__toggle-fill"></div>
+                  </div>
+                </div>
+                <hr class="tools__line tools__line--small">
+                <div class="tools__wrapper">
+                  <button class="btn tools__btn tools__contrast"></button>
+                  <div class="tools__range tools__range--contrast">
+                    <div class="tools__scale tools__scale--contrast">
+                      <div class="tools__bar tools__bar--contrast"></div>
+                    </div>
+                    <div class="tools__toggle tools__toggle-contrast"></div>
+                  </div>
+                </div>
+                <hr class="tools__line tools__line--small">
               </div>
-              <div class="tools__wrapper">
-                <button class="btn tools__btn tools__fill"></button>
-                <div class="tools__range tools__range--fill">
-                  <div class="tools__scale tools__scale--fill">
-                    <div class="tools__bar tools__bar--fill"></div>
-                  </div>
-                  <div class="tools__toggle tools__toggle-fill"></div>
-                </div>
-              </div>
-              <div class="tools__wrapper">
-                <button class="btn tools__btn tools__contrast"></button>
-                <div class="tools__range tools__range--contrast">
-                  <div class="tools__scale tools__scale--contrast">
-                    <div class="tools__bar tools__bar--contrast"></div>
-                  </div>
-                  <div class="tools__toggle tools__toggle-contrast"></div>
-                </div>
+              <!-- </div> -->
+        <!-- </div> -->
+              <hr class="tools__line tools__line--long">
+              <div class="add-photo__buttons">
+                <button class="btn add-photo__button add-photo__post-it add-photo__button--active" type="submit">Запостить</button>
+                <button class="btn add-photo__button add-photo__cancel add-photo__button--disabled" type="reset">Отмена</button>
               </div>
             </div>
-          </div>
-        </div>
-        <hr class="tools__line">
-        <div class="add-photo__wrapper">
-          <button class="btn add-photo__button add-photo__post-it add-photo__button--active" type="submit">Запостить</button>
-          <button class="btn add-photo__button add-photo__cancel add-photo__button--disabled" type="reset">Отмена</button>
-        </div>
       </form>
     </section>
   </main>
