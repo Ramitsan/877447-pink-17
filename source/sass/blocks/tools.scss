@@ -22,11 +22,21 @@
   left: 31px;
   background-image: url("../img/icon-editor-crop.svg");
   background-repeat: no-repeat;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .tools__crop--active {
   background-image: url("../img/icon-editor-crop-active.svg");
   background-repeat: no-repeat;
+  opacity: 1;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .tools__fill {
@@ -34,13 +44,24 @@
   left: 113px;
   background-image: url("../img/icon-editor-fill.svg");
   background-repeat: no-repeat;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
+
 
 .tools__contrast {
   top: 39px;
   left: 202px;
   background-image: url("../img/icon-editor-contrast.svg");
   background-repeat: no-repeat;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .tools__range {
@@ -75,6 +96,7 @@
 
 .tools__toggle-crop {
   left: 210px;
+  background-color: $pink;
 }
 
 .tools__range--fill,
@@ -131,6 +153,11 @@
     left: 2px;
     background-image: url("../img/icon-editor-fill-active.svg");
     background-size: 25px 25px;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .tools__contrast {
@@ -138,6 +165,11 @@
     left: 6px;
     background-image: url("../img/icon-editor-contrast-active.svg");
     background-size: 17px 17px;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .tools__toggle {
@@ -146,11 +178,19 @@
 
   .tools__toggle-crop {
     left: 163px;
+    background-color: $pink;
   }
 
   .tools__toggle-fill {
     top: 12px;
     left: 43px;
+    background-color: $pink;
+  }
+
+  .tools__toggle-contrast {
+    top: 10px;
+    left: 114px;
+    background-color: $pink;
   }
 
   .tools__scale {
@@ -171,12 +211,6 @@
     padding-top: 16px;
     height: 45px;
   }
-
-  .tools__toggle-contrast {
-    top: 10px;
-    left: 114px;
-  }
-
 
   .tools__line--long {
     display: none;
