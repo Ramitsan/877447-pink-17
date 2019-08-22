@@ -1,14 +1,6 @@
 .main-nav {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.main-nav {
   position: relative;
-  background-color: $dark-blue;
-
   width: 100%;
-  min-height: 51px;
   margin: 0 auto;
 }
 
@@ -81,12 +73,10 @@
 
   .main-nav--closed .main-nav__item {
     display: none;
-
   }
 
   .main-nav--opened .main-nav__item {
     display: block;
-
   }
 
   .main-nav--nojs .main-nav__toggle {
