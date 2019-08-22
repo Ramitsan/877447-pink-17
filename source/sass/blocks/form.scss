@@ -435,12 +435,11 @@
   }
 
   .form-contacts {
+    width: 620px;
     order: 3;
     margin: 0 auto;
     margin-bottom: 58px;
-
     border: 2px solid #e5e5e5;
-    max-width: 620px;
     padding: 0;
   }
 
@@ -559,11 +558,10 @@
     margin-bottom: 50px;
   }
 
-
   .form__title--emotions {
     width: 260px;
     position: static;
-    padding: 0 40px;
+    padding: 0 35px;
     margin-bottom: 10px;
   }
 
@@ -597,7 +595,6 @@
     text-align: right;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .form {
@@ -670,6 +667,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
   .form-contacts__item-wrapper {

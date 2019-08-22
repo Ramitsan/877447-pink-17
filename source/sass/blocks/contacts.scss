@@ -64,6 +64,19 @@
   margin-bottom: 6px;
 }
 
+.contacts__email a {
+  &:hover,
+  &:focus {
+    color: $dark-blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: transparentize($dark-blue, 0.7);
+    text-decoration: none;
+  }
+}
+
 .contacts__email {
   margin-bottom: 15px;
 }
