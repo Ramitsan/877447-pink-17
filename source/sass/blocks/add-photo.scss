@@ -134,6 +134,11 @@
   }
 
   .add-photo__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 216px;
+
     width: 100%;
     padding-top: 48px;
     padding-left: 27px;
@@ -149,5 +154,46 @@
 @media (min-width: $desktop-width) {
   .add-photo__text {
     width: 940px;
+    padding-top: 0;
+    padding-bottom: 47px;
+  }
+
+  .add-photo__slogan--one {
+    margin-top: 5px;
+  }
+
+  .add-photo__form {
+    background-color: $white;
+  }
+
+  .add-photo__wrapper {
+    width: 940px;
+    padding-bottom: 51px;
+    padding-left: 80px;
+    padding-right: 60px;
+    background-color: $light-gray;
+  }
+
+  .add-photo__edit {
+    width: 410px;
+  }
+
+  .add-photo__buttons {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 0;
+    padding-top: 5px;
+    margin-bottom: 6px;
+  }
+
+  .add-photo__button {
+    width: 183px;
+    padding: 8px 33px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }

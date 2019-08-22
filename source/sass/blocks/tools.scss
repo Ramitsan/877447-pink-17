@@ -187,3 +187,56 @@
     width: 100%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .tools {
+    width: 410px;
+  }
+
+  .tools__wrapper {
+    width: 410px;
+    padding-right: 12px;
+  }
+
+  .tools__scale {
+    width: 290px;
+  }
+
+  .tools__btn {
+    width: 47px;
+    height: 47px;
+  }
+
+  .tools__crop {
+    top: -4px;
+    left: -2px;
+    background-size: 47px 47px;
+  }
+
+  .tools__fill {
+    top: 72px;
+    left: 0;
+    background-size: 47px 47px;
+  }
+
+  .tools__contrast {
+    top: 147px;
+    left: 5px;
+    background-size: 32px 32px;
+  }
+
+  .tools__toggle-crop {
+    top: 3px;
+    left: 90px;
+  }
+
+  .tools__toggle-fill {
+    top: 13px;
+    left: 267px;
+  }
+
+  .tools__toggle-contrast {
+    top: 11px;
+    left: 180px;
+  }
+}
