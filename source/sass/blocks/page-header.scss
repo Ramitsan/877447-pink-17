@@ -94,7 +94,9 @@
   }
 
   .page-header__inner {
-    background-position: 50% -750%;
+    // background-position: 50% -750%;
+    background-position: 50% 100%;
+    background-size: cover
   }
 
   .page-header__logo {

@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
+  background-color: $dark-blue;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -127,6 +128,7 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 100%;
+    background-color: transparent;
   }
 }
 
