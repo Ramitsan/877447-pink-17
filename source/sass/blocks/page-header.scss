@@ -4,11 +4,15 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: left 0% bottom 274px;
+  background-position: left 0% bottom 272px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
+}
+
+.page-header__top {
+  background-color: transparentize(#000000, 0.7);
 }
 
 .page-header__inner {
@@ -17,12 +21,12 @@
 
 .page-header__btn {
   position: absolute;
-  top: -46px;
-  right: 7px;
+  top: -47px;
+  right: 19px;
   z-index: 2;
 
   width: 50px;
-  height: 24px;
+  height: 26px;
 
   background-color: transparent;
 
@@ -33,7 +37,6 @@
 .page-header__wrapper {
   padding: 0;
   margin: 0;
-  background-color: $dark-blue;
 }
 
 .page-header__nav {
@@ -42,9 +45,9 @@
 }
 
 .page-header__logo {
-  height: 70px;
+  // height: 70px;
   margin: 0;
-  border-bottom: 1px solid #000000;
+  // border-bottom: 1px solid #000000;
 }
 
 .page-header__toggle {
@@ -85,7 +88,7 @@
   .page-header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 100%;
-    background-size: cover;
+    background-size: auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -95,8 +98,8 @@
 
   .page-header__inner {
     // background-position: 50% -750%;
-    background-position: 50% 100%;
-    background-size: cover
+    background-position: top;
+    background-size: auto;
   }
 
   .page-header__logo {
@@ -119,7 +122,7 @@
   }
 
   .page-header__form-caption {
-    width: 485px;
+    width: 500px;
     padding-top: 35px;
     padding-bottom: 47px;
   }
@@ -127,6 +130,11 @@
   .page-header__form-title {
     font-size: 50px;
     line-height: 60px;
+  }
+
+  .page-header__btn {
+    top: -67px;
+    right: 20px;
   }
 }
 

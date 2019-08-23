@@ -59,7 +59,7 @@
 .photo-day__comment {
   margin: 0;
   padding: 18px;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
   background-color: $light-gray;
 
@@ -118,7 +118,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    padding-top: 23px;
+    padding-top: 25px;
     padding-left: 28px;
     padding-right: 28px;
     padding-bottom: 15px;
@@ -156,6 +156,11 @@
     overflow: hidden;
   }
 
+   .photo-day::before {
+    top: 54px;
+    right: 9px;
+  }
+
   .photo-day__wrapper {
     width: 940px;
   }
@@ -169,6 +174,10 @@
   .photo-day_photo {
     width: 1200px;
     height: 507px;
+  }
+
+  .photo-day__comment {
+    padding-top: 24px;
   }
 
   .photo-day__likes::before {

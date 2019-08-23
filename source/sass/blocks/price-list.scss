@@ -149,8 +149,8 @@
   }
 
   .price-list__head {
-    padding: 15px 0;
-    padding-bottom: 5px;
+    padding: 11px 0;
+    padding-bottom: 7px;
   }
 
   .price-list__tariff-name {
@@ -170,7 +170,7 @@
     background-image: url("../img/bg-hit-tablet.svg");
     position: absolute;
     left: 0;
-    top: -15px;
+    top: -11px;
     width: 61px;
     height: 61px;
   }
@@ -178,8 +178,8 @@
   .price-list__tariff-name--hit::after {
     position: absolute;
     transform: rotate(-45deg);
-    left: 1px;
-    top: -18px;
+    left: -1px;
+    top: -14px;
   }
 
   .price-list__value--yes::after {
@@ -189,7 +189,7 @@
 
   .price-list__value--no::after {
     right: 61px;
-    top: 7px;
+    top: 10px;
   }
 }
 
