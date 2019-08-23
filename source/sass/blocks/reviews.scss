@@ -131,7 +131,7 @@
 
   .reviews__button--prev {
     top: -163px;
-    left: 0px;
+    left: 0;
   }
 
   .reviews__button--prev::before {
@@ -190,5 +190,4 @@
     content: "";
     opacity: 0.1;
   }
-
 }

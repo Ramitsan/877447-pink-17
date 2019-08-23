@@ -71,7 +71,6 @@
 
 
 @media (max-width: $mobile-width-only) {
-
   .main-nav--closed .main-nav__item {
     display: none;
   }
@@ -132,7 +131,7 @@
 }
 
 @media (min-width: $desktop-width) {
-   .main-nav {
+  .main-nav {
     background-color: transparent;
   }
 
@@ -152,7 +151,6 @@
     text-align: center;
     border-top: none;
     border-bottom: none;
-
   }
 
   .main-nav__item:not(:last-child) {

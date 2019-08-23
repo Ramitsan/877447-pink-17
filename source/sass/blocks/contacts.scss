@@ -114,7 +114,7 @@
 }
 
 .contacts__map::after {
- content: "";
+  content: "";
   background-image: url("../img/bg-triangle-white-footer.svg");
   background-size: auto;
   background-position: top;
@@ -241,14 +241,10 @@
   }
 
   .contacts__address p {
-    margin-bottom: 25px;
-  }
-
-  .contacts__email p {
     margin-bottom: 27px;
   }
 
-   .contacts__text--address {
+  .contacts__email p {
     margin-bottom: 27px;
   }
 
