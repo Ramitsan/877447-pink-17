@@ -9,10 +9,23 @@
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-color: #bec2c7;
+  background-color: transparentize($dark-blue, 0.7);
   border: 3px solid $white;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: transparentize($dark-blue, 0.4);
+  }
+
+  &:active {
+    background-color: transparentize($dark-blue, 0.9);
+  }
+}
+
+.slider__toggle--tariff {
+  border-color: $light-gray;
 }
 
 .slider__toggle:not(:last-child) {
@@ -22,4 +35,13 @@
 .slider__toggle--active {
   background-color: $white;
   border: 3px solid $dark-blue;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+  }
+
+  &:active {
+    background-color: $white;
+  }
 }

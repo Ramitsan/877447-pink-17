@@ -1,16 +1,276 @@
-.tools__post-it,
-.tools__cancel {
-  width: 280px;
-  padding: 15px 50px;
+.tools {
+  position: relative;
+  padding-top: 30px;
 }
 
-.tools__post-it--active {
-  background-color: $white;
-  color: $pink;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
+.tools__wrapper {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.tools__btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: $light-gray;
+}
+
+.tools__crop {
+  top: 32px;
+  left: 31px;
+  background-image: url("../img/icon-editor-crop.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.tools__crop--active {
+  background-image: url("../img/icon-editor-crop-active.svg");
+  background-repeat: no-repeat;
+  opacity: 1;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.tools__fill {
+  top: 34px;
+  left: 113px;
+  background-image: url("../img/icon-editor-fill.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+
+.tools__contrast {
+  top: 39px;
+  left: 202px;
+  background-image: url("../img/icon-editor-contrast.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.tools__range {
+  position: relative;
+
+  margin-top: 49px;
+  height: 67px;
+  background-color: $light-gray;
+  padding-top: 39px;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+.tools__scale {
+  height: 2px;
+  background-color: #283645;
+}
+
+.tools__toggle {
+  position: absolute;
+  top: 31px;
+
+  width: 15px;
+  height: 15px;
+  padding: 0;
 
   border: 2px solid $pink;
-  border-radius: 30%;
+  border-radius: 50%;
+  background-color: $light-gray;
+  cursor: pointer;
+}
+
+.tools__toggle-crop {
+  left: 210px;
+  background-color: $pink;
+}
+
+.tools__range--fill,
+.tools__range--contrast {
+  display: none;
+}
+
+.tools__line {
+  height: 1px;
+  background-color: #dddfe0;
+  border: none;
+}
+
+.tools__line--long {
+  width: 100%;
+}
+
+.tools__line--small {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .tools {
+    padding-top: 0;
+  }
+
+  .tools__wrapper {
+    width: 275px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .tools__btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tools__range {
+    height: 38px;
+    margin-top: 0;
+    padding-top: 10px;
+  }
+
+  .tools__crop {
+    top: 8px;
+    left: 2px;
+    background-size: 23px 23px;
+  }
+
+  .tools__fill {
+    top: 81px;
+    left: 2px;
+    background-image: url("../img/icon-editor-fill-active.svg");
+    background-size: 25px 25px;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .tools__contrast {
+    top: 154px;
+    left: 6px;
+    background-image: url("../img/icon-editor-contrast-active.svg");
+    background-size: 17px 17px;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .tools__toggle {
+    top: 2px;
+  }
+
+  .tools__toggle-crop {
+    left: 163px;
+    background-color: $pink;
+  }
+
+  .tools__toggle-fill {
+    top: 12px;
+    left: 43px;
+    background-color: $pink;
+  }
+
+  .tools__toggle-contrast {
+    top: 10px;
+    left: 114px;
+    background-color: $pink;
+  }
+
+  .tools__scale {
+    width: 202px;
+  }
+
+  .tools__range--fill,
+  .tools__range--contrast {
+    display: block;
+  }
+
+  .tools__range--fill {
+    padding-top: 19px;
+    height: 48px;
+  }
+
+  .tools__range--contrast {
+    padding-top: 16px;
+    height: 45px;
+  }
+
+  .tools__line--long {
+    display: none;
+  }
+
+  .tools__line--small {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tools {
+    width: 410px;
+  }
+
+  .tools__wrapper {
+    width: 410px;
+    padding-right: 12px;
+  }
+
+  .tools__scale {
+    width: 290px;
+  }
+
+  .tools__btn {
+    width: 47px;
+    height: 47px;
+  }
+
+  .tools__crop {
+    top: -4px;
+    left: -2px;
+    background-size: 47px 47px;
+  }
+
+  .tools__fill {
+    top: 72px;
+    left: 0;
+    background-size: 47px 47px;
+  }
+
+  .tools__contrast {
+    top: 147px;
+    left: 5px;
+    background-size: 32px 32px;
+  }
+
+  .tools__toggle-crop {
+    top: 3px;
+    left: 90px;
+  }
+
+  .tools__toggle-fill {
+    top: 13px;
+    left: 267px;
+  }
+
+  .tools__toggle-contrast {
+    top: 11px;
+    left: 180px;
+  }
 }

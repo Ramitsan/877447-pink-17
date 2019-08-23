@@ -1,7 +1,7 @@
 .user-comment {
   margin: 0;
   padding: 18px;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
   background-color: $light-gray;
 }
@@ -18,7 +18,7 @@
 }
 
 .user-comment__likes::before {
-  content: url("../../img/icon-heart.svg");
+  content: url("../img/icon-heart.svg");
   position: absolute;
   left: -31px;
   bottom: 10px;
@@ -45,7 +45,7 @@
 @media (min-width: $tablet-width) {
   .user-comment {
     min-height: 155px;
-    padding-top: 24px;
+    padding-top: 23px;
     padding-left: 28px;
     padding-bottom: 0;
 

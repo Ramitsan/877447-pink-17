@@ -20,13 +20,13 @@
   </div> -->
   <!-- svg-спрайт, собранный вручную, в котором работают :hover и :active через свойство currentColor -->
   <svg style="display:none">
-    <symbol id="logo-pink-white-mobile"">
+    <symbol id="logo-pink-white-mobile">
       <g>
-      <path fill=" currentColor" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z" />
-    <path fill="currentColor" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z" />
-    <path fill="currentColor" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z" />
-    <path fill="currentColor" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z" />
-    </g>
+        <path fill=" currentColor" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z" />
+        <path fill="currentColor" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z" />
+        <path fill="currentColor" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z" />
+        <path fill="currentColor" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z" />
+      </g>
     </symbol>
     <symbol id="logo-pink-white-tablet">
       <g>
@@ -124,11 +124,13 @@
               <use xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
-          <div class="page-header__toggle">
-            <button class="page-header__btn visually-hidden" type="button">Открыть меню</button>
-          </div>
         </div>
-        <nav class="page-header__nav main-nav">
+        <nav class="page-header__nav main-nav main-nav--closed">
+          <!-- main-nav--nojs -->
+          <!-- main-nav--opened -->
+          <div class="page-header__toggle">
+            <button class="btn page-header__btn main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Главная</a>
@@ -140,7 +142,7 @@
               <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -157,20 +159,20 @@
             <ul class="download-app__list">
               <li class="download-app__item">
                 <span class="visually-hidden">Скачать для IOS</span>
-                <a class="download-app__link download-app__link--mac" href="#">
-                  <img src="img\icon-apple.svg" width="46" height="56" alt="Иконка Apple">
+                <a class="download-app__link download-app__link--mac" href="https://www.apple.com/ios/app-store/">
+                  <img src="img/icon-apple.svg" width="46" height="56" alt="Иконка Apple">
                 </a>
               </li>
               <li class="download-app__item">
                 <span class="visually-hidden">Скачать для Android</span>
-                <a class="download-app__link download-app__link--android" href="#">
-                  <img src="img\icon-android.svg" width="42" height="47" alt="Иконка Android">
+                <a class="download-app__link download-app__link--android" href="https://play.google.com/store/apps?hl=ru">
+                  <img src="img/icon-android.svg" width="42" height="47" alt="Иконка Android">
                 </a>
               </li>
               <li class="download-app__item">
                 <span class="visually-hidden">Скачать для Windows</span>
-                <a class="download-app__link download-app__link--windows" href="#">
-                  <img src="img\icon-microsoft.svg" width="44" height="42" alt="">
+                <a class="download-app__link download-app__link--windows" href="https://www.microsoft.com/ru-ru/store/apps">
+                  <img src="img/icon-microsoft.svg" width="44" height="42" alt="">
                 </a>
               </li>
             </ul>
@@ -202,7 +204,7 @@
                 <p class="features__description features__description--two">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br> усилить эффект</p>
               </li>
               <li class="features__item features__item--three">
-                <h3 class="features__title features__title--three">Заводит <br> новых друзей</h3>
+                <h3 class="features__title features__title--three">Заводит новых друзей</h3>
                 <p class="features__description features__description--three">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
@@ -213,10 +215,9 @@
     <div class="effect">
       <div class="effect__wrapper">
         <div class="effect__info">
-          <div class="effect__slogan">
-            <h1 class="effect__title">Эффект <br> на 24 часа!</h1>
-          </div>
-          <p class="effect__text">Британские ученые провели исследования и доказали, <br class="effect__space-one"> что положительный эффект от использования приложения длится <br class="effect__space-two"> целые сутки!
+          <h1 class="effect__title">Эффект &nbsp; на 24 часа!</h1>
+          <p class="effect__text">Британские ученые провели исследования и доказали, <br class="effect__space-one"> что положительный эффект от использования приложения длится
+            <!-- <br class="effect__space-two"> --> &nbsp; целые сутки!
           </p>
           <a href="#" class="effect__link">Узнать больше об исследовании</a>
         </div>
@@ -231,8 +232,8 @@
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
           <div class="reviews__buttons">
-            <button class="visually-hidden reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="visually-hidden reviews__next" type="button">Следующий отзыв</button>
+            <button class="btn reviews__button reviews__button--prev" type="button">Предыдущий отзыв</button>
+            <button class="btn reviews__button reviews__button--next" type="button">Следующий отзыв</button>
           </div>
         </div>
         <div class="reviews__toggles slider__toggles">
@@ -310,9 +311,9 @@
           </tbody>
         </table>
         <div class="tariffs__toggles slider__toggles">
-          <span class="slider__toggle"></span>
-          <span class="slider__toggle slider__toggle--active"></span>
-          <span class="slider__toggle"></span>
+          <span class="slider__toggle slider__toggle--tariff"></span>
+          <span class="slider__toggle slider__toggle--tariff slider__toggle--active"></span>
+          <span class="slider__toggle slider__toggle--tariff"></span>
         </div>
       </div>
     </section>
@@ -338,7 +339,7 @@
         </div>
       </div>
       <div class="contacts__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5914788562316!2d30.321126936998468!3d59.938920706664355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1565554487580!5m2!1sru!2sby" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5914788562316!2d30.321126936998468!3d59.938920706664355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1565554487580!5m2!1sru!2sby" style="border:0" allowfullscreen=""></iframe>
       </div>
     </section>
   </main>
@@ -373,7 +374,7 @@
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">
               <span class="visually-hidden">Pink на Фейсбуке</span>
-              <svg class="social__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+              <svg class="social__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
                 <path fill="#D22856" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"></path>
               </svg>
             </a>
@@ -381,7 +382,7 @@
           <li class="social__item">
             <a class="social__link social__link--youtube" href="#">
               <span class="visually-hidden">Pink на Ютубе</span>
-              <svg class="social__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+              <svg class="social__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                 <path fill="#D22856" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"></path>
               </svg>
             </a>
@@ -393,14 +394,15 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
           <svg class="copyright__icon" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09">
-            <use xlink:href="#logo-htmlacademy"></use>
+            <use class="aaa" xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
   <!-- Footer [END] -->
-  <script src="picturefill.js"></script>
+  <script src="js/picturefill.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

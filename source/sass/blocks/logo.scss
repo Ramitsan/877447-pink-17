@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: flex-start;
   padding: 21px 20px;
+  padding-bottom: 25px;
 }
 
 .logo__mobile {
@@ -18,7 +19,7 @@
   }
 
   &:active {
-    color: transparentize($white, 0.3);
+    color: transparentize($white, 0.7);
   }
 }
 

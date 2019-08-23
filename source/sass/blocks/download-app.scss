@@ -8,13 +8,13 @@
 .download-app__container {
   width: 320px;
   margin: 0 auto;
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position-x: 1px;
-  background-position-y: 109px;
+  background-position-x: 0;
+  background-position-y: 110px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/iphone-hand-mobile@2x.png");
+    background-image: url("../img/iphone-hand-mobile@2x.png");
     background-size: 258px auto;
   }
 }
@@ -31,9 +31,10 @@
 
 .download-app__list {
   width: 208px;
-  margin: 0 auto;
   padding: 0;
-  margin-top: 29px;
+
+  margin: 0 auto;
+  margin-top: 32px;
   margin-bottom: 17px;
   list-style: none;
 
@@ -65,7 +66,7 @@
   }
 
   &:active {
-    color: transparentize($pink, 0.3);
+    color: transparentize($pink, 0.7);
   }
 }
 
@@ -86,13 +87,13 @@
   color: $white;
   font-size: 24px;
   line-height: 30px;
-  margin-top: 22px;
+  margin-top: 23px;
 }
 
 .download-app__download {
   min-height: 250px;
   padding-top: 22px;
-  padding-bottom: 31px;
+  padding-bottom: 28px;
 }
 
 @media (min-width: $tablet-width) {
@@ -104,12 +105,12 @@
   .download-app__container {
     width: 620px;
     height: 100%;
-    background-image: url("../../img/iphone-hand-tablet@1x.png");
+    background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: left -39px bottom 1px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/iphone-hand-tablet@2x.png");
+      background-image: url("../img/iphone-hand-tablet@2x.png");
       background-size: 700px auto;
     }
   }
@@ -169,11 +170,11 @@
   .download-app__container {
     width: 940px;
     height: 100%;
-    background-image: url("../../img/iphone-hand-desktop@1x.png");
+    background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: left 17px bottom 1px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/iphone-hand-desktop@2x.png");
+      background-image: url("../img/iphone-hand-desktop@2x.png");
       background-size: 1050px auto;
     }
   }

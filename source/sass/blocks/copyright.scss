@@ -21,7 +21,7 @@
   }
 
   &:active {
-    color: transparentize($dark-blue, 0.3);
+    color: transparentize($dark-blue, 0.7);
   }
 }
 
@@ -29,10 +29,6 @@
   .copyright {
     margin-right: 0;
     margin-top: 10px;
-  }
-
-  .copyright__link {
-    margin-top: 7px;
   }
 
   .copyright__label {
@@ -55,5 +51,9 @@
 
   .copyright__link {
     margin-top: 12px;
+  }
+
+  .aaa {
+    fill: red;
   }
 }

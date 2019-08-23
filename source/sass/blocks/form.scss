@@ -29,6 +29,16 @@
   margin-bottom: 17px;
 
   border: 2px solid #e5e5e5;
+
+  &:hover {
+    outline: 0;
+    border-color: $dark-blue;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: $pink;
+  }
 }
 
 .form-name__input::placeholder {
@@ -62,7 +72,7 @@
   width: 220px;
   position: absolute;
   margin: auto;
-  top: 38px;
+  top: 41px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -72,6 +82,7 @@
   list-style: none;
   text-align: left;
   padding-left: 0;
+  margin-top: 16px;
 }
 
 .form-progress__item {
@@ -110,9 +121,19 @@
   background-color: $white;
 }
 
+.form-progress__option + label:hover::before {
+  outline: 0;
+  border-color: $dark-blue;
+}
+
+.form-progress__option + label:active::before {
+  outline: 0;
+  border-color: $pink;
+}
+
 .form-progress__option:checked + label::after {
   content: "";
-  background-image: url("../../img/icon-checkbox.svg");
+  background-image: url("../img/icon-checkbox.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -129,7 +150,7 @@
 }
 
 .form-contacts__wrapper {
-  padding-top: 27px;
+  padding-top: 25px;
   padding-bottom: 12px;
 }
 
@@ -150,6 +171,16 @@
   margin-top: 6px;
   margin-bottom: 17px;
   border: 2px solid #e5e5e5;
+
+  &:hover {
+    outline: 0;
+    border-color: $dark-blue;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: $pink;
+  }
 }
 
 .form-contacts__input::placeholder {
@@ -237,6 +268,16 @@
   background-color: $pink;
 }
 
+.form-applications__option + label:hover::before {
+  outline: 0;
+  border-color: $dark-blue;
+}
+
+.form-applications__option + label:active::before {
+  outline: 0;
+  border-color: $pink;
+}
+
 .form-emotions {
   position: relative;
   padding-top: 32px;
@@ -279,19 +320,25 @@
   font-weight: normal;
   color: $dark-blue;
   border: 2px solid #e5e5e5;
+
+  &:hover {
+    outline: 0;
+    border-color: $dark-blue;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: $pink;
+  }
 }
 
 .form__btn-submit {
   width: 100%;
-  background-color: $mint;
-  border: 1px solid transparent;
   padding: 16px 45px;
-
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  color: $white;
 }
 
 .form__note {
@@ -389,12 +436,11 @@
   }
 
   .form-contacts {
+    width: 620px;
     order: 3;
     margin: 0 auto;
     margin-bottom: 58px;
-
     border: 2px solid #e5e5e5;
-    max-width: 620px;
     padding: 0;
   }
 
@@ -445,7 +491,7 @@
 
   .form-contacts__item-wrapper--phone::after {
     content: "";
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     position: absolute;
     z-index: 4;
     width: 20px;
@@ -457,7 +503,7 @@
 
   .form-contacts__item-wrapper--address::after {
     content: "";
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
     position: absolute;
     z-index: 4;
     width: 18px;
@@ -496,10 +542,12 @@
 
   .form-progress__option + label::before {
     left: -59px;
+    top: -5px;
   }
 
   .form-progress__option:checked + label::after {
     left: -53px;
+    top: 0;
   }
 
   .form-emotions {
@@ -513,11 +561,10 @@
     margin-bottom: 50px;
   }
 
-
   .form__title--emotions {
     width: 260px;
     position: static;
-    padding: 0 40px;
+    padding: 0 35px;
     margin-bottom: 10px;
   }
 
@@ -526,6 +573,7 @@
     height: 193px;
     margin: 0 auto;
     padding-bottom: 0;
+    padding-top: 13px;
   }
 
   .form-emotions__wrapper {
@@ -539,7 +587,7 @@
     justify-content: space-between;
     align-items: baseline;
 
-    padding-bottom: 48px;
+    padding-bottom: 45px;
   }
 
   .form__btn-submit {
@@ -551,7 +599,6 @@
     text-align: right;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .form {
@@ -624,6 +671,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
   .form-contacts__item-wrapper {
@@ -664,7 +712,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start;
   }
 
   .form-progress__item {
