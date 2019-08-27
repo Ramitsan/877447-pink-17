@@ -617,7 +617,6 @@
 
     margin-right: 35px;
     padding: 0;
-    padding-bottom: 7px;
   }
 
   .form-name__wrapper {
@@ -630,11 +629,13 @@
     margin-bottom: 0;
   }
 
+  .form-name__input--patronymic {
+    margin-bottom: 0;
+  }
+
   .form-applications {
     width: 435px;
-    height: 307px;
     margin: 0;
-
     padding: 0;
   }
 
@@ -658,35 +659,25 @@
   .form-contacts {
     width: 940px;
     margin: 0 auto;
-    margin-top: 32px;
+    margin-top: 56px;
     margin-bottom: 56px;
     padding: 0;
   }
 
   .form-contacts__wrapper {
-    width: 936px;
-    margin: 0;
+    width: 820px;
+    margin: 0 auto;
     padding: 0;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .form-contacts__item-wrapper {
-    width: 50%;
+    width: 375px;
     margin-bottom: 13px;
-  }
-
-  .form-contacts__item-wrapper--phone {
-    margin-left: 54px;
-    margin-right: 32px;
-  }
-
-  .form-contacts__item-wrapper--address {
-    margin-left: 32px;
-    margin-right: 63px;
   }
 
   .form__title--contacts {
@@ -696,7 +687,7 @@
   .form-progress {
     width: 940px;
     padding-bottom: 0;
-    margin-bottom: 52px;
+    margin-bottom: 57px;
   }
 
   .form-progress__wrapper {
@@ -706,17 +697,48 @@
   }
 
   .form-progress__list {
-    height: 164px;
-
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-content: stretch;
+
+    margin-bottom: 7px;
   }
 
   .form-progress__item {
-    margin-right: 63px;
+    width: 265px;
+  }
+
+  .form-progress__item {
+    margin-right: -59px;
+    padding-left: 42px;
+  }
+
+  .form-progress__item:first-child {
+    order: -6;
+  }
+
+   .form-progress__item:nth-child(2) {
+    order: -3;
+  }
+
+   .form-progress__item:nth-child(3) {
+    order: -5;
+  }
+
+  .form-progress__item:nth-child(4) {
+    order: -2;
+
+  }
+
+  .form-progress__item:nth-child(5) {
+    order: -4;
+  }
+
+   .form-progress__item:nth-child(6) {
+    order: -1;
   }
 
   .form-emotions {
