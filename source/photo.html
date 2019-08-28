@@ -5,6 +5,12 @@
   <meta charset="utf-8">
   <title>Каталог фотографий</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
   <script>
     // Picture element HTML5 shiv
@@ -125,8 +131,7 @@
             </svg>
           </a>
         </div>
-        <nav class="page-header__nav main-nav main-nav--closed">
-          <!-- main-nav--nojs -->
+        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
           <!-- main-nav--opened -->
           <div class="page-header__toggle">
             <button class="btn page-header__btn main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -357,7 +362,7 @@
             <div class="add-photo__edit">
               <div class="add-photo__tools tools">
                 <div class="tools__wrapper">
-                  <button class="btn tools__btn tools__crop tools__crop--active"></button>
+                  <button class="btn tools__btn tools__crop tools__crop--active" type="button"><span class="visually-hidden">Обрезать изображение</span></button>
                   <div class="tools__range tools__range--crop">
                     <div class="tools__scale tools__scale--crop">
                       <div class="tools__bar tools__bar--crop"></div>
@@ -365,9 +370,8 @@
                     <div class="tools__toggle tools__toggle-crop"></div>
                   </div>
                 </div>
-                <hr class="tools__line tools__line--small">
                 <div class="tools__wrapper">
-                  <button class="btn tools__btn tools__fill"></button>
+                  <button class="btn tools__btn tools__fill" type="button"><span class="visually-hidden">Изменить заливку</span></button>
                   <div class="tools__range tools__range--fill">
                     <div class="tools__scale tools__scale--fill">
                       <div class="tools__bar tools__bar--fill"></div>
@@ -375,9 +379,8 @@
                     <div class="tools__toggle tools__toggle-fill"></div>
                   </div>
                 </div>
-                <hr class="tools__line tools__line--small">
                 <div class="tools__wrapper">
-                  <button class="btn tools__btn tools__contrast"></button>
+                  <button class="btn tools__btn tools__contrast" type="button"><span class="visually-hidden">Изменить контраст</span></button>
                   <div class="tools__range tools__range--contrast">
                     <div class="tools__scale tools__scale--contrast">
                       <div class="tools__bar tools__bar--contrast"></div>
@@ -385,9 +388,7 @@
                     <div class="tools__toggle tools__toggle-contrast"></div>
                   </div>
                 </div>
-                <hr class="tools__line tools__line--small">
               </div>
-              <hr class="tools__line tools__line--long">
               <div class="add-photo__buttons">
                 <button class="btn add-photo__button add-photo__post-it add-photo__button--active" type="submit">Запостить</button>
                 <button class="btn add-photo__button add-photo__cancel add-photo__button--disabled" type="reset">Отмена</button>

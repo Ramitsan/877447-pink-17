@@ -1,3 +1,7 @@
+.add-photo {
+  position: relative;
+}
+
 .add-photo__text {
   width: 280px;
   margin: 0 auto;
@@ -26,6 +30,16 @@
 .add-photo__form {
   background-color: $light-gray;
 }
+
+.add-photo__form::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #dddfe0;
+
+  bottom: 201px;
+  width: 100%;
+}
+
 
 .add-photo__image {
   width: 280px;
@@ -59,10 +73,11 @@
 
 .add-photo__post-it {
   margin: 13px 0;
+  margin-top: 27px;
 }
 
 .add-photo__button--active {
-  background-color: $white;
+  background-color: $light-gray;
   color: $pink;
   border: 2px solid $pink;
 
@@ -114,6 +129,10 @@
     font-size: 18px;
   }
 
+  .add-photo__form::after {
+    display: none;
+  }
+
   .add-photo__user {
     display: flex;
     flex-direction: row;
@@ -140,7 +159,7 @@
     min-height: 216px;
 
     width: 100%;
-    padding-top: 48px;
+    padding-top: 41px;
     padding-left: 27px;
   }
 
@@ -155,7 +174,7 @@
   .add-photo__text {
     width: 940px;
     padding-top: 0;
-    padding-bottom: 47px;
+    padding-bottom: 48px;
   }
 
   .add-photo__slogan--one {

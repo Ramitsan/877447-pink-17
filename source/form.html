@@ -5,6 +5,12 @@
   <meta charset="utf-8">
   <title>Конкурс</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
   <script>
     // Picture element HTML5 shiv
@@ -125,8 +131,7 @@
             </svg>
           </a>
         </div>
-        <nav class="page-header__nav main-nav main-nav--closed">
-          <!-- main-nav--nojs -->
+        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
           <!-- main-nav--opened -->
           <div class="page-header__toggle">
             <button class="btn page-header__btn main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -181,27 +186,27 @@
           <legend class="form__title form__title--progress">Ваши безбашенные достижения в путешествии</legend>
           <div class="form__wrapper form-progress__wrapper">
             <ul class="form-progress__list">
-              <li class="form-progress__item" tabindex="0">
+              <li class="form-progress__item form-progress__item--selphi" tabindex="0">
                 <input class="visually-hidden form-progress__option" type="checkbox" id="option_1" name="option_1" checked="">
                 <label class="form-progress__label" for="option_1">Сделал селфи с акулой</label>
               </li>
-              <li class="form-progress__item" tabindex="0">
+              <li class="form-progress__item form-progress__item--beach" tabindex="0">
                 <input class="visually-hidden form-progress__option" type="checkbox" id="option_2" name="option_2" checked="">
                 <label class="form-progress__label" for="option_2">Обгорел на пляже</label>
               </li>
-              <li class="form-progress__item" tabindex="0">
+              <li class="form-progress__item form-progress__item--norris" tabindex="0">
                 <input class="visually-hidden form-progress__option" type="checkbox" id="option_3" name="option_3">
                 <label class="form-progress__label" for="option_3">Видел Чака Норриса</label>
               </li>
-              <li class="form-progress__item" tabindex="0">
+              <li class="form-progress__item form-progress__item--souvenirs" tabindex="0">
                 <input class="visually-hidden form-progress__option" type="checkbox" id="option_4" name="option_4">
                 <label class="form-progress__label" for="option_4">Накупил сувениров</label>
               </li>
-              <li class="form-progress__item" tabindex="0">
+              <li class="form-progress__item form-progress__item--tower" tabindex="0">
                 <input class="visually-hidden form-progress__option" type="checkbox" id="option_5" name="option_5" checked="">
                 <label class="form-progress__label" for="option_5">Удержал башню</label>
               </li>
-              <li class="form-progress__item" tabindex="0">
+              <li class="form-progress__item form-progress__item--hotel" tabindex="0">
                 <input class="visually-hidden form-progress__option" type="checkbox" id="option_6" name="option_6">
                 <label class="form-progress__label" for="option_6">Разгромил отель</label>
               </li>
@@ -320,7 +325,7 @@
         <p class="modal-request__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <br> оповестим вас.</p>
       </div>
     </div>
-    <div class="modal-request__bottom modal-request__wrapper--bottom">
+    <div class="modal-request__bottom modal-request__wrapper modal-request__wrapper--bottom">
       <div class="modal-request__wrapper">
         <button class="btn modal-request__btn" type="button">Закрыть окно</button>
       </div>
