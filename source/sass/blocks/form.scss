@@ -587,7 +587,7 @@
     justify-content: space-between;
     align-items: baseline;
 
-    padding-bottom: 45px;
+    padding-bottom: 48px;
   }
 
   .form__btn-submit {
@@ -702,42 +702,37 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: stretch;
 
     margin-bottom: 7px;
   }
 
   .form-progress__item {
     width: 265px;
-  }
-
-  .form-progress__item {
     margin-right: -59px;
     padding-left: 42px;
   }
 
-  .form-progress__item:first-child {
+  .form-progress__item--selphi {
     order: -6;
   }
 
-   .form-progress__item:nth-child(2) {
-    order: -3;
-  }
-
-   .form-progress__item:nth-child(3) {
+  .form-progress__item--norris {
     order: -5;
   }
 
-  .form-progress__item:nth-child(4) {
-    order: -2;
-
-  }
-
-  .form-progress__item:nth-child(5) {
+  .form-progress__item--tower {
     order: -4;
   }
 
-   .form-progress__item:nth-child(6) {
+  .form-progress__item--beach {
+    order: -3;
+  }
+
+  .form-progress__item--souvenirs {
+    order: -2;
+  }
+
+  .form-progress__item--hotel {
     order: -1;
   }
 
