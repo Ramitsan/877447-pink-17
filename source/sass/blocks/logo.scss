@@ -19,7 +19,8 @@
   }
 
   &:active {
-    color: transparentize($white, 0.7);
+    color: $white;
+    opacity: 0.3;
   }
 }
 

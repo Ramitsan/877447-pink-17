@@ -51,7 +51,6 @@
   }
 }
 
-
 .tools__contrast {
   top: 39px;
   left: 202px;
@@ -92,6 +91,10 @@
   border-radius: 50%;
   background-color: $light-gray;
   cursor: pointer;
+
+  &:active {
+    background-color: $pink;
+  }
 }
 
 .tools__toggle-crop {

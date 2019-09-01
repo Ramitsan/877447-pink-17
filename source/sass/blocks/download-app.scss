@@ -110,12 +110,12 @@
 @media (min-width: $tablet-width) {
   .download-app {
     width: 100%;
-    height: 619px;
   }
 
   .download-app__container {
     width: 620px;
     height: 100%;
+    padding-bottom: 83px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: left -39px bottom 1px;
@@ -175,13 +175,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .download-app {
-    height: 746px;
-  }
-
   .download-app__container {
     width: 940px;
     height: 100%;
+    padding-bottom: 95px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: left 17px bottom 1px;
 
