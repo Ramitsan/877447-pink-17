@@ -30,8 +30,8 @@
 
 
 
-* Студент: [Ирина Рамицан](https://up.htmlacademy.ru/adaptive/17/user/877447).
-* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
+Студент: [Ирина Рамицан](https://up.htmlacademy.ru/adaptive/17/user/877447).
+Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 Полезный файл:
 
