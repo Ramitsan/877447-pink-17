@@ -1,3 +1,5 @@
+# Проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+
 Адаптивный, кроссбраузерный сайт приложения "Pink"  для раскрашивания серых будней в розовый цвет :)
 По совместительству - еще и мини-фотосайт, где пользователи могут выкладывать фото, писать комментарии, ставить лайки, участвовать в конкурсе.
 
@@ -28,12 +30,8 @@
 
 
 
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
-
 * Студент: [Ирина Рамицан](https://up.htmlacademy.ru/adaptive/17/user/877447).
 * Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
-
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
 Полезный файл:
 
