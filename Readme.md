@@ -1,9 +1,37 @@
+Адаптивный, кроссбраузерный сайт приложения "Pink"  для раскрашивания серых будней в розовый цвет :)
+По совместительству - еще и мини-фотосайт, где пользователи могут выкладывать фото, писать комментарии, ставить лайки, участвовать в конкурсе.
+
+В процессе написания проекта были использованы инструменты и технологии:
+- HTML5;
+- SASS (SCSS);
+- JavaScript;
+- Gulp;
+- БЭМ;
+- SVG-спрайты;
+- ретиновая графика для экранов с повышенной плотностью пикселей;
+- Flexbox;
+- изображения в формате WebP;
+- оптимизация шрифтов.
+
+Сайт идентично отображается в последних версиях браузеров Chrome, Firefox, Safari, Edge, Internet Explorer11.
+
+Для запуска скачайте архив проекта себе на компьютер, распакуйте. В папке проекта запустите команды:
+- npm start
+- npm run build
+
+В результате сборки должна получаться папка build со всеми необходимыми файлами.
+
+Перестроение сеток и элементов происходит на следующих разрешениях:
+- 320px — мобильная версия,
+- 660px — планшетная версия,
+- 960px — десктопная версия.
+
+
+
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ирина Рамицан](https://up.htmlacademy.ru/adaptive/17/user/877447).
 * Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
-
----
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
@@ -14,45 +42,6 @@
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
 
----
-
-### Памятка
-
-#### 1. Зарегистрируйтесь на Гитхабе
-
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/877447-pink-17) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808088-259e3a80-a190-11e9-98f7-3c0edd9740f5.jpg">
-
-Получится вот так:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808087-2505a400-a190-11e9-8caa-2e7584c702cc.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808090-259e3a80-a190-11e9-8a64-c58d94803b73.jpg">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
-
----
-
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
-
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
 [travis-image]: https://travis-ci.com/htmlacademy-adaptive/877447-pink-17.svg?branch=master
 [travis-url]: https://travis-ci.com/htmlacademy-adaptive/877447-pink-17
