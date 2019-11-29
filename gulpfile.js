@@ -1,5 +1,8 @@
 "use strict";
 
+const ghPages = require('gh-pages');
+const path = require('path');
+
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
@@ -15,8 +18,6 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
-const ghPages = require('gh-pages');
-const path = require('path');
 
 gulp.task("clean", function() {
   return del("build");
