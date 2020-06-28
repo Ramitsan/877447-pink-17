@@ -22,7 +22,6 @@
 //валидация введенных данных и отправка формы
 var inputSurnameElement = document.querySelector('.form-name__input--surname');
 var inputNameElement = document.querySelector('.form-name__input--name');
-// var inputPhoneElement = document.querySelector('.form-contacts__input--phone');
 var inputEmailElement = document.querySelector('.form-contacts__input--email');
 var modalOverlay = document.querySelector('.modal-overlay');
 var formContest = document.querySelector('.contest__form');
@@ -84,6 +83,16 @@ var validateForm = function(elem1, elem2, elem3) {
   }
 };
 
+var inputChangeHandler = function(elem) {
+  elem.addEventListener('input', function() {
+    elem.style.borderColor = '#e5e5e5';
+  })
+}
+
+inputChangeHandler(inputSurnameElement);
+inputChangeHandler(inputNameElement);
+inputChangeHandler(inputEmailElement);
+
 // отправка формы
 formContest.addEventListener('submit', function(evt) {
   evt.preventDefault();
@@ -141,5 +150,7 @@ window.addEventListener('keydown', function(evt) {
     }
   }
 });
+
+
 
 
