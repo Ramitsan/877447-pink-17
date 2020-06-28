@@ -1,3 +1,4 @@
+//мобильное меню
   var navMain = document.querySelector('.main-nav');
   var navToggle = document.querySelector('.main-nav__toggle');
   var pageHeaderLogo = document.querySelector('.page-header__logo');
@@ -15,3 +16,61 @@
       pageHeaderLogo.classList.remove('page-header__logo--open');
     }
   });
+
+
+
+//валидация введенных данных и отправка формы
+var inputPhoneElement = document.querySelector('.form-contacts__input--phone');
+var inputEmailElement = document.querySelector('.form-contacts__input--email');
+// var buttonSubmitForm = document.querySelector('.form__btn-submit');
+var formContest = document.querySelector('.contest__form');
+var modalError = document.querySelector('.modal-bad');
+var modalRequest = document.querySelector('.modal-request');
+
+
+var modalRequestShow = function() {
+  modalRequest.classList.add('modal--show');
+}
+
+var modalRequestClose = function() {
+  modalRequest.classList.remove('modal--show');
+}
+
+var modalErrorShow = function() {
+  modalError.classList.add('modal--show');
+}
+
+var modalErrorClose = function() {
+  modalError.classList.remove('modal--show');
+}
+
+
+var validateForm = function(elem1, elem2) {
+  if (elem1.value === '') {
+    elem1.style.borderColor = '#ff0000';
+    modalErrorShow();
+  } else {
+    elem1.style.borderColor = '#e5e5e5';
+  }
+
+ if (elem2.value === '') {
+    elem2.style.borderColor = '#ff0000';
+    modalErrorShow();
+  } else {
+    elem2.style.borderColor = '#e5e5e5';
+  }
+
+ if (elem1.value !== '' && elem2.value !== '') {
+    modalRequestShow();
+    // overlayShowHandler();
+    // disableScrollHandler();
+    // modalRequestCallClose();
+  }
+}
+
+formContest.addEventListener('submit', function(evt) {
+  evt.preventDefault();
+  validateForm(inputPhoneElement, inputEmailElement);
+  console.log('111');
+})
+
