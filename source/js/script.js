@@ -22,11 +22,12 @@
 //валидация введенных данных и отправка формы
 var inputPhoneElement = document.querySelector('.form-contacts__input--phone');
 var inputEmailElement = document.querySelector('.form-contacts__input--email');
-// var buttonSubmitForm = document.querySelector('.form__btn-submit');
 var modalOverlay = document.querySelector('.modal-overlay');
 var formContest = document.querySelector('.contest__form');
 var modalError = document.querySelector('.modal-bad');
+var modalErrorButton = document.querySelector('.modal-bad__btn');
 var modalRequest = document.querySelector('.modal-request');
+var modalRequestButton = document.querySelector('.modal-request__btn');
 
 
 var modalRequestShow = function() {
@@ -53,7 +54,6 @@ var overlayRemove = function() {
   modalOverlay.classList.remove('modal--show');
 }
 
-
 var validateForm = function(elem1, elem2) {
   if (elem1.value === '') {
     elem1.style.borderColor = '#ff0000';
@@ -78,5 +78,26 @@ formContest.addEventListener('submit', function(evt) {
   evt.preventDefault();
   overlayShow();
   validateForm(inputPhoneElement, inputEmailElement);
+});
+
+modalErrorButton.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  modalErrorClose();
+  overlayRemove();
+});
+
+modalRequestButton.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  modalRequestClose();
+  overlayRemove();
 })
 
+var overlayClickHandler = function(popup) {
+  modalOverlay.addEventListener('click', function() {
+    popup.classList.remove('modal--show');
+    overlayRemove();
+  });
+};
+
+overlayClickHandler(modalError);
+overlayClickHandler(modalRequest);
