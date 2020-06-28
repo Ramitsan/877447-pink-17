@@ -28,6 +28,7 @@ var modalError = document.querySelector('.modal-bad');
 var modalErrorButton = document.querySelector('.modal-bad__btn');
 var modalRequest = document.querySelector('.modal-request');
 var modalRequestButton = document.querySelector('.modal-request__btn');
+var ESC_KEYCODE = 27;
 
 
 var modalRequestShow = function() {
@@ -101,3 +102,18 @@ var overlayClickHandler = function(popup) {
 
 overlayClickHandler(modalError);
 overlayClickHandler(modalRequest);
+
+window.addEventListener('keydown', function(evt) {
+  if (evt.keyCode === ESC_KEYCODE) {
+    if (modalError.classList.contains('modal--show')) {
+      evt.preventDefault();
+      modalErrorClose();
+      overlayRemove();
+    }
+    if (modalRequest.classList.contains('modal--show')) {
+      evt.preventDefault();
+      modalRequestClose();
+      overlayRemove();
+    }
+  }
+});
