@@ -91,6 +91,10 @@ formContest.addEventListener('submit', function(evt) {
   validateForm(inputSurnameElement, inputNameElement, inputEmailElement);
 });
 
+jQuery(function($) {
+  $("#phone").mask("+7 (999) 99 99 99");
+});
+
 modalErrorButton.addEventListener('click', function(evt) {
   evt.preventDefault();
   modalErrorClose();
