@@ -1,7 +1,9 @@
 .modal {
   display: none;
-  // box-shadow: 0 5px 15px 5px #ccced3;
+  box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.4);
   position: fixed;
+  top: 300px;
+  left: 25%;
   z-index: 1000;
 }
 
@@ -24,17 +26,19 @@
 
 .modal-bad {
   width: 320px;
-  top: 300px;
-  left: 25%;
+}
+
+.modal-bad__top {
+  background-color: $white;
+}
+
+.modal-bad__bottom {
+   background-color: $light-gray;
 }
 
 .modal-bad__wrapper {
   width: 280px;
   margin: 0 auto;
-}
-
-.modal-bad__top {
-  background-color: $white;
 }
 
 .modal-bad__wrapper--top {

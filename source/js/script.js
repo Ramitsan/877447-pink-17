@@ -78,6 +78,5 @@ formContest.addEventListener('submit', function(evt) {
   evt.preventDefault();
   overlayShow();
   validateForm(inputPhoneElement, inputEmailElement);
-  console.log('111');
 })
 
