@@ -43,7 +43,7 @@ var validateForm = function(elem1, elem2, elem3) {
     elem1.style.borderColor = '#e5e5e5';
   }
 
- if (elem2.value === '') {
+if (elem2.value === '') {
     elem2.style.borderColor = '#ff0000';
     modalErrorShow();
   } else {
@@ -57,7 +57,7 @@ var validateForm = function(elem1, elem2, elem3) {
     elem3.style.borderColor = '#e5e5e5';
   }
 
- if (elem1.value !== '' && elem2.value !== '' && elem3.value !== '') {
+if (elem1.value !== '' && elem2.value !== '' && elem3.value !== '') {
     modalRequestShow();
   }
 };
