@@ -35,17 +35,27 @@ var overlayRemove = function() {
   modalOverlay.classList.remove('modal--show');
 }
 
+var disableScroll = function() {
+  document.body.classList.add('body-scroll');
+}
+
+var activateScroll = function() {
+  document.body.classList.remove('body-scroll');
+}
+
 var validateForm = function(elem1, elem2, elem3) {
   if (elem1.value === '') {
     elem1.style.borderColor = '#ff0000';
     modalErrorShow();
+    disableScroll();
   } else {
     elem1.style.borderColor = '#e5e5e5';
   }
 
-if (elem2.value === '') {
+  if (elem2.value === '') {
     elem2.style.borderColor = '#ff0000';
     modalErrorShow();
+    disableScroll();
   } else {
     elem2.style.borderColor = '#e5e5e5';
   }
@@ -53,12 +63,14 @@ if (elem2.value === '') {
   if (elem3.value === '') {
     elem3.style.borderColor = '#ff0000';
     modalErrorShow();
+    disableScroll();
   } else {
     elem3.style.borderColor = '#e5e5e5';
   }
 
-if (elem1.value !== '' && elem2.value !== '' && elem3.value !== '') {
+  if (elem1.value !== '' && elem2.value !== '' && elem3.value !== '') {
     modalRequestShow();
+    disableScroll();
   }
 };
 
@@ -88,12 +100,14 @@ modalErrorButton.addEventListener('click', function(evt) {
   evt.preventDefault();
   modalErrorClose();
   overlayRemove();
+  activateScroll();
 });
 
 modalRequestButton.addEventListener('click', function(evt) {
   evt.preventDefault();
   modalRequestClose();
   overlayRemove();
+  activateScroll();
   formContest.reset();
 })
 
@@ -101,13 +115,15 @@ modalRequestButton.addEventListener('click', function(evt) {
 var overlayClickHandler = function(popup) {
   modalOverlay.addEventListener('click', function() {
     if (popup === modalRequest) {
-    popup.classList.remove('modal--show');
-    overlayRemove();
-    formContest.reset();
-  } else {
-    popup.classList.remove('modal--show');
-    overlayRemove();
-  }
+      popup.classList.remove('modal--show');
+      overlayRemove();
+      activateScroll();
+      formContest.reset();
+    } else {
+      popup.classList.remove('modal--show');
+      overlayRemove();
+      activateScroll();
+    }
   });
 };
 
@@ -121,11 +137,13 @@ window.addEventListener('keydown', function(evt) {
       evt.preventDefault();
       modalErrorClose();
       overlayRemove();
+      activateScroll();
     }
     if (modalRequest.classList.contains('modal--show')) {
       evt.preventDefault();
       modalRequestClose();
       overlayRemove();
+      activateScroll();
       formContest.reset();
     }
   }
