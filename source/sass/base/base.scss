@@ -9,7 +9,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -40,4 +39,8 @@ img {
 .btn {
   border: 1px solid transparent;
   vertical-align: middle;
+}
+
+.body-scroll {
+  overflow: hidden;
 }
