@@ -1,5 +1,8 @@
 # Проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+![Pink](https://user-images.githubusercontent.com/45296707/134822496-b37b3457-d367-40b9-b51a-f0df994b2a34.jpg)
+
+
 Студент: [Ирина Рамицан](https://up.htmlacademy.ru/adaptive/17/user/877447).<br>
 Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
