@@ -1,4 +1,4 @@
-# Проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Проект «Пинк» [![Build status][travis-image]][travis-url] 
 
 ![Pink](https://user-images.githubusercontent.com/45296707/134822496-b37b3457-d367-40b9-b51a-f0df994b2a34.jpg)
 
